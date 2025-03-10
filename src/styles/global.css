@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+/* DIN2014 Fonts */
+@font-face {
+  font-family: "DIN2014";
+  src: url("/fonts/DIN2014-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DIN2014";
+  src: url("/fonts/DIN2014-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DIN2014";
+  src: url("/fonts/DIN2014-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Geom Graphic Fonts */
+@font-face {
+  font-family: "Geom Graphic";
+  src: url("/fonts/Fontspring-DEMO-geomgraphic_bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geom Graphic";
+  src: url("/fonts/Fontspring-DEMO-geomgraphic_bold_italic.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Geom Graphic";
+  src: url("/fonts/Fontspring-DEMO-geomgraphic_light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geom Graphic";
+  src: url("/fonts/Fontspring-DEMO-geomgraphic_light_italic.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Geom Graphic";
+  src: url("/fonts/Fontspring-DEMO-geomgraphic_regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geom Graphic";
+  src: url("/fonts/Fontspring-DEMO-geomgraphic_regular_italic.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Geom Graphic";
+  src: url("/fonts/Fontspring-DEMO-geomgraphic_semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geom Graphic";
+  src: url("/fonts/Fontspring-DEMO-geomgraphic_semibold_italic.otf")
+    format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.bg-segway {
+  background-color: #DA291C;
+}

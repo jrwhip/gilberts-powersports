@@ -1,0 +1,165 @@
+import React from "react";
+import HeroSwiper from "../components/hero-swiper/hero-swiper";
+import FeatureNavCard from "../components/feature-nav-card/feature-nav-card";
+import SegwayLayout from "../components/segway-layout";
+import ContentWithStickyImage from "../components/ContentWithStickyImage";
+import TwoColWithPhotoDark from "../components/TwoColWithPhotoDark";
+import SplitWithImage from "../components/SplitWithImage";
+import { TruckIcon, FuelIcon, GlobeAltIcon } from "@heroicons/react/20/solid";
+
+const segwaySlides = [
+  {
+    video: "/video/kristi-Site-hero.m4v",
+    title: "Discover the Journey",
+    subtitle: "Experience the ride of a lifetime",
+  },
+  {
+    video: "/video/ut6-hero-1.m4v",
+    title: "Adventure Awaits",
+    subtitle: "Unleash your wild side",
+  },
+  {
+    video: "/video/super-villain-1.m4v",
+    title: "Ride in Style",
+    subtitle: "Turn heads wherever you go",
+  },
+];
+
+const featuredNavs = [
+  {
+    title: "UT 10",
+    id: "UT10",
+    productLink: "/ut10",
+    titleFont: "DIN2014",
+    titleColor: "#DA291C",
+    subitems: [
+      {
+        name: "S",
+        image:
+          "//jaredwhipplellc-765105907.imgix.net/segway/sx20t-black-red-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
+        description: "Compact power for solo adventures.",
+      },
+      {
+        name: "P",
+        image:
+          "//jaredwhipplellc-765105907.imgix.net/segway/sx10wp_white_red_right_3qtr.png/images/ut10-s-crew.jpg",
+        description: "Spacious design for small teams.",
+      },
+      {
+        name: "S Crew",
+        image: "/images/ut10-p-crew.jpg",
+        description: "Versatile performance for groups.",
+      },
+      {
+        name: "P Crew",
+        image: "/images/ut10-p-crew.jpg",
+        description: "Versatile performance for groups.",
+      },
+    ],
+  },
+  {
+    title: "Villian",
+    id: "VILLIAN",
+    productLink: "/products/sx20",
+    titleFont: "DIN2014",
+    titleColor: "#DA291C",
+    subitems: [
+      {
+        name: "P",
+        image:
+          "https://jaredwhipplellc-765105907.imgix.net/segway/sx20t-black-red-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
+        description: "Compact power for solo adventures.",
+      },
+      {
+        name: "S Crew",
+        image:
+          "https://jaredwhipplellc-765105907.imgix.net/segway/sx10wp_white_red_right_3qtr.png/images/ut10-s-crew.jpg",
+        description: "Spacious design for small teams.",
+      },
+      {
+        name: "P Crew",
+        image: "/images/ut10-p-crew.jpg",
+        description: "Versatile performance for groups.",
+      },
+    ],
+  },
+  {
+    title: "UT 6",
+    id: "UT6",
+    productLink: "/products/sx20",
+    titleFont: "DIN2014",
+    titleColor: "#DA291C",
+    subitems: [
+      {
+        name: "P",
+        image:
+          "https://jaredwhipplellc-765105907.imgix.net/segway/sx20t-black-red-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
+        description: "Compact power for solo adventures.",
+      },
+      {
+        name: "S Crew",
+        image:
+          "https://jaredwhipplellc-765105907.imgix.net/segway/sx10wp_white_red_right_3qtr.png/images/ut10-s-crew.jpg",
+        description: "Spacious design for small teams.",
+      },
+      {
+        name: "P Crew",
+        image: "/images/ut10-p-crew.jpg",
+        description: "Versatile performance for groups.",
+      },
+    ],
+  },
+];
+
+const features = [
+  {
+    title: "All-Terrain Mobility",
+    description:
+      "Navigate rough farm terrain with ease using the UT10's rugged design and high ground clearance built for tough conditions. Cross muddy fields, rocky paths, or uneven hills without getting stuck or slowing down.",
+    icon: GlobeAltIcon,
+  },
+  {
+    title: "Heavy Duty Hauling",
+    description:
+      "Transport feed, tools, and equipment across the farm with 1,500 lb capacity to get every job done efficiently. Load up hay bales, fencing materials, or any heavy items you need moved with ease.",
+    icon: TruckIcon,
+  },
+  {
+    title: "Powerful Gas Engine",
+    description:
+      "Tackle big farm jobs with a 1000cc twin-cylinder engine pumping out 105 horsepower. Keep working all day with a 10.6-gallon fuel tank that won’t quit before you do.",
+    icon: FuelIcon,
+  },
+];
+
+const SegwayPowersports = () => {
+  return (
+    <>
+      <SegwayLayout>
+        <HeroSwiper slides={segwaySlides} />
+        <div style={{ display: "flex", gap: "16px" }}>
+          {featuredNavs.map((product) => (
+            <FeatureNavCard key={product.id} product={product} />
+          ))}
+        </div>
+
+        <ContentWithStickyImage
+          imageSrc="//jaredwhipplellc-765105907.imgix.net/segway/segway-for-work-chainsaw.jpg?q=80&w=808&h=479&auto=format&fit=clip"
+          imageAlt="segway and man with chainsaw"
+          eyebrowText="Farm smarter"
+          title="Revolutionize Farm Work"
+          subtitle="The Segway UT10 brings efficiency and power to your daily farm tasks with a design built to handle the toughest jobs from sunrise to sunset."
+          introParagraph="Tackle farm chores with confidence using this rugged utility vehicle made to take on mud, rocks, and whatever else your land presents. It’s a dependable workhorse designed for the demands of real farm life."
+          features={features}
+          mainContent="From checking livestock to maintaining fences, the UT10 handles it all. Its durable construction stands up to daily farm demands while keeping you productive without delays or interruptions. Whether you’re hauling supplies to the barn, inspecting cattle in distant fields, or clearing brush, this vehicle delivers consistent performance."
+          secondaryTitle="Work All Day"
+          secondaryContent="With its 105-horsepower gasoline engine and large fuel capacity, complete farm tasks without stopping to refuel constantly or worrying about losing power in remote areas. It’s built to keep going as long as you do, no matter the size of your farm or the scope of your work."
+        />
+
+        <SplitWithImage />
+      </SegwayLayout>
+    </>
+  );
+};
+
+export default SegwayPowersports;
