@@ -3,8 +3,6 @@ import HeroSwiper from "../components/hero-swiper/hero-swiper";
 import FeatureNavCard from "../components/feature-nav-card/feature-nav-card";
 import SegwayLayout from "../components/segway-layout";
 import ContentWithStickyImage from "../components/ContentWithStickyImage";
-import TwoColWithPhotoDark from "../components/TwoColWithPhotoDark";
-import SplitWithImage from "../components/SplitWithImage";
 import CardEdgeToEdgeCardMobile from "../components/card-edge-to-edge-mobile";
 import { TruckIcon, FuelIcon, GlobeAltIcon } from "@heroicons/react/20/solid";
 
@@ -195,7 +193,38 @@ const SegwayPowersports = () => {
     <>
       <SegwayLayout>
         <HeroSwiper slides={segwaySlides} />
-        <div style={{ display: "flex", gap: "16px" }}>
+        {/* Improved FeatureNavCard container */}
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 text-center">
+            Explore Our Models
+          </h2>
+          <div className="flex flex-wrap justify-center gap-6">
+            {featuredNavs.map((product) => (
+              <div key={product.id} className="sm:max-w-xs">
+                <FeatureNavCard product={product} />
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 text-center">
+            Explore Our Models
+          </h2>
+          <div className="flex flex-wrap justify-center gap-6">
+            {featuredNavs.map((product) => (
+              <div
+                key={product.id}
+                className="sm:w-[calc(100%-6px)] lg:w-[calc(33.333%-16px)] xl:w-92"
+              >
+                <FeatureNavCard product={product} />
+              </div>
+            ))}
+          </div>
+        </div>
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 text-center">
+          Explore Our Models
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-items-center">
           {featuredNavs.map((product) => (
             <FeatureNavCard key={product.id} product={product} />
           ))}
