@@ -5,6 +5,7 @@ import SegwayLayout from "../components/segway-layout";
 import ContentWithStickyImage from "../components/ContentWithStickyImage";
 import TwoColWithPhotoDark from "../components/TwoColWithPhotoDark";
 import SplitWithImage from "../components/SplitWithImage";
+import CardEdgeToEdgeCardMobile from "../components/card-edge-to-edge-mobile";
 import { TruckIcon, FuelIcon, GlobeAltIcon } from "@heroicons/react/20/solid";
 
 const segwaySlides = [
@@ -27,8 +28,65 @@ const segwaySlides = [
 
 const featuredNavs = [
   {
+    title: "UT 6",
+    id: "UT6",
+    productLink: "/products/sx20",
+    titleFont: "DIN2014",
+    titleColor: "#DA291C",
+    subitems: [
+      {
+        name: "P",
+        image:
+          "https://jaredwhipplellc-765105907.imgix.net/segway/sx20t-black-red-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
+        description: "Compact power for solo adventures.",
+      },
+      {
+        name: "S Crew",
+        image:
+          "https://jaredwhipplellc-765105907.imgix.net/segway/sx10wp_white_red_right_3qtr.png/images/ut10-s-crew.jpg",
+        description: "Spacious design for small teams.",
+      },
+      {
+        name: "P Crew",
+        image: "/images/ut10-p-crew.jpg",
+        description: "Versatile performance for groups.",
+      },
+    ],
+  },
+  {
     title: "UT 10",
     id: "UT10",
+    productLink: "/ut10",
+    titleFont: "DIN2014",
+    titleColor: "#DA291C",
+    subitems: [
+      {
+        name: "S",
+        image:
+          "//jaredwhipplellc-765105907.imgix.net/segway/sx20t-black-red-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
+        description: "Compact power for solo adventures.",
+      },
+      {
+        name: "P",
+        image:
+          "//jaredwhipplellc-765105907.imgix.net/segway/sx10wp_white_red_right_3qtr.png/images/ut10-s-crew.jpg",
+        description: "Spacious design for small teams.",
+      },
+      {
+        name: "S Crew",
+        image: "/images/ut10-p-crew.jpg",
+        description: "Versatile performance for groups.",
+      },
+      {
+        name: "P Crew",
+        image: "/images/ut10-p-crew.jpg",
+        description: "Versatile performance for groups.",
+      },
+    ],
+  },
+  {
+    title: "UT 10 Crew",
+    id: "UT10Crew",
     productLink: "/ut10",
     titleFont: "DIN2014",
     titleColor: "#DA291C",
@@ -84,8 +142,8 @@ const featuredNavs = [
     ],
   },
   {
-    title: "UT 6",
-    id: "UT6",
+    title: "Super Villian",
+    id: "SUPERVILLIAN",
     productLink: "/products/sx20",
     titleFont: "DIN2014",
     titleColor: "#DA291C",
@@ -156,7 +214,7 @@ const SegwayPowersports = () => {
           secondaryContent="With its 105-horsepower gasoline engine and large fuel capacity, complete farm tasks without stopping to refuel constantly or worrying about losing power in remote areas. It’s built to keep going as long as you do, no matter the size of your farm or the scope of your work."
         />
 
-        <SplitWithImage />
+        <CardEdgeToEdgeCardMobile />
       </SegwayLayout>
     </>
   );

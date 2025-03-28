@@ -13,7 +13,7 @@ export default function SplitWithImage() {
           <div className="relative h-80 lg:-ml-8 lg:h-auto lg:w-full lg:grow xl:ml-0">
             <img
               alt=""
-              src="//jaredwhipplellc-765105907.imgix.net/segway/q1-ut10-crew-1080-x-1920.png?q=80&w=856&h=1424&auto=format&fit=clip"
+              src="//jaredwhipplellc-765105907.imgix.net/segway/ut6-lanch-photo-barn-door.jpg?q=80&w=856&h=1424&auto=format&fit=clip"
               className="absolute inset-0 size-full bg-gray-50 object-cover"
             />
           </div>

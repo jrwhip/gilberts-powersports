@@ -3,7 +3,7 @@ import React from "react";
 const navigation = {
   main: [
     { name: "About", href: "#" },
-    { name: "Services", href: "#" },
+    { name: "Service Center", href: "#" },
     { name: "Contact", href: "#" },
   ],
   hours: [
@@ -51,7 +51,7 @@ export default function SimplifiedFooter() {
           <div className="space-y-6">
             <img
               alt="Company logo"
-              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+              src="/img/gilbert-logo-text-white.svg"
               className="h-12"
             />
             <p className="text-xl text-gray-100">
@@ -76,7 +76,7 @@ export default function SimplifiedFooter() {
             <div className="grid grid-cols-2 gap-8">
               <div>
                 <h3 className="text-xl font-semibold text-white mb-6">
-                  Main Links
+                  Information
                 </h3>
                 <ul role="list" className="space-y-6">
                   {navigation.main.map((item) => (
@@ -111,7 +111,8 @@ export default function SimplifiedFooter() {
         <div className="mt-12 border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row md:justify-between">
             <p className="text-lg text-gray-100">
-              &copy; {currentYear} Your Company, Inc. All rights reserved.
+              &copy; {currentYear} Gilberts Powersports, Llc. All rights
+              reserved.
             </p>
             <p className="text-lg text-gray-100 mt-4 md:mt-0">
               We respect your privacy - your data stays with us, period.

@@ -44,13 +44,6 @@ const HeroSwiper = ({ slides }) => {
             <div className="overlay">
               <h1>{slide.title}</h1>
               <p>{slide.subtitle}</p>
-              <button
-                className="overlay-button"
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
-              >
-                Explore Now
-              </button>
             </div>
           </div>
         </SwiperSlide>
