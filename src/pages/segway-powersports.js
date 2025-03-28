@@ -193,7 +193,7 @@ const SegwayPowersports = () => {
     <>
       <SegwayLayout>
         <HeroSwiper slides={segwaySlides} />
-        <div className="mx-auto max-w-9xl px-4 sm:px-6 lg:px-8 py-12">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8 text-center">
             Explore Our Models
           </h2>
