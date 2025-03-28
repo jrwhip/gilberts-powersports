@@ -13,7 +13,7 @@ const FeatureNavCard = ({ product }) => {
   };
 
   return (
-    <div className="w-full max-w-sm overflow-hidden rounded-lg border border-gray-200 bg-white shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+    <div className="w-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
       {/* Image container with fixed aspect ratio */}
       <div className="relative h-0 pb-[66.67%] overflow-hidden">
         <a href={productLink} className="block absolute inset-0">
