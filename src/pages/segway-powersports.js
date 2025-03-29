@@ -35,13 +35,19 @@ const featuredNavs = [
       {
         name: "P",
         image:
-          "https://jaredwhipplellc-765105907.imgix.net/segway/sx20t-black-red-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
+          "https://jaredwhipplellc-765105907.imgix.net/segway/ut6-p-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
         description: "Compact power for solo adventures.",
       },
       {
         name: "S Crew",
         image:
-          "https://jaredwhipplellc-765105907.imgix.net/segway/sx10wp_white_red_right_3qtr.png/images/ut10-s-crew.jpg",
+          "https://jaredwhipplellc-765105907.imgix.net/segway/ut6-s-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
+        description: "Spacious design for small teams.",
+      },
+      {
+        name: "M",
+        image:
+          "https://jaredwhipplellc-765105907.imgix.net/segway/ut6-m-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
         description: "Spacious design for small teams.",
       },
       {
@@ -61,24 +67,14 @@ const featuredNavs = [
       {
         name: "S",
         image:
-          "//jaredwhipplellc-765105907.imgix.net/segway/sx20t-black-red-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
+          "//jaredwhipplellc-765105907.imgix.net/segway/ut10-s-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
         description: "Compact power for solo adventures.",
       },
       {
         name: "P",
         image:
-          "//jaredwhipplellc-765105907.imgix.net/segway/sx10wp_white_red_right_3qtr.png/images/ut10-s-crew.jpg",
+          "//jaredwhipplellc-765105907.imgix.net/segway/ut10-p-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
         description: "Spacious design for small teams.",
-      },
-      {
-        name: "S Crew",
-        image: "/images/ut10-p-crew.jpg",
-        description: "Versatile performance for groups.",
-      },
-      {
-        name: "P Crew",
-        image: "/images/ut10-p-crew.jpg",
-        description: "Versatile performance for groups.",
       },
     ],
   },
@@ -90,25 +86,15 @@ const featuredNavs = [
     titleColor: "#DA291C",
     subitems: [
       {
-        name: "S",
-        image:
-          "//jaredwhipplellc-765105907.imgix.net/segway/sx20t-black-red-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
-        description: "Compact power for solo adventures.",
-      },
-      {
-        name: "P",
-        image:
-          "//jaredwhipplellc-765105907.imgix.net/segway/sx10wp_white_red_right_3qtr.png/images/ut10-s-crew.jpg",
-        description: "Spacious design for small teams.",
-      },
-      {
         name: "S Crew",
-        image: "/images/ut10-p-crew.jpg",
+        image:
+          "//jaredwhipplellc-765105907.imgix.net/segway/ut10-crew-s-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
         description: "Versatile performance for groups.",
       },
       {
         name: "P Crew",
-        image: "/images/ut10-p-crew.jpg",
+        image:
+          "//jaredwhipplellc-765105907.imgix.net/segway/ut10-crew-p-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
         description: "Versatile performance for groups.",
       },
     ],
@@ -123,19 +109,20 @@ const featuredNavs = [
       {
         name: "P",
         image:
-          "https://jaredwhipplellc-765105907.imgix.net/segway/sx20t-black-red-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
+          "https://jaredwhipplellc-765105907.imgix.net/segway/sx10-p-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
         description: "Compact power for solo adventures.",
       },
       {
-        name: "S Crew",
+        name: "S",
         image:
-          "https://jaredwhipplellc-765105907.imgix.net/segway/sx10wp_white_red_right_3qtr.png/images/ut10-s-crew.jpg",
+          "https://jaredwhipplellc-765105907.imgix.net/segway/sx10-s-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
         description: "Spacious design for small teams.",
       },
       {
-        name: "P Crew",
-        image: "/images/ut10-p-crew.jpg",
-        description: "Versatile performance for groups.",
+        name: "WP",
+        image:
+          "https://jaredwhipplellc-765105907.imgix.net/segway/sx10-wp-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
+        description: "Spacious design for small teams.",
       },
     ],
   },
@@ -147,21 +134,10 @@ const featuredNavs = [
     titleColor: "#DA291C",
     subitems: [
       {
-        name: "P",
+        name: "Super Villain",
         image:
-          "https://jaredwhipplellc-765105907.imgix.net/segway/sx20t-black-red-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
+          "https://jaredwhipplellc-765105907.imgix.net/segway/sx20-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
         description: "Compact power for solo adventures.",
-      },
-      {
-        name: "S Crew",
-        image:
-          "https://jaredwhipplellc-765105907.imgix.net/segway/sx10wp_white_red_right_3qtr.png/images/ut10-s-crew.jpg",
-        description: "Spacious design for small teams.",
-      },
-      {
-        name: "P Crew",
-        image: "/images/ut10-p-crew.jpg",
-        description: "Versatile performance for groups.",
       },
     ],
   },

@@ -20,7 +20,7 @@ const FeatureNavCard = ({ product }) => {
           <img
             src={activeSubitem.image}
             alt={`${title} ${activeSubitem.name}`}
-            className="absolute w-full pt-8 transition-transform duration-500 hover:scale-105"
+            className="absolute w-full transition-transform duration-500 hover:scale-105"
           />
         </a>
       </div>
