@@ -28,7 +28,7 @@ const featuredNavs = [
   {
     title: "UT 6",
     id: "UT6",
-    productLink: "/products/sx20",
+    productLink: "/segway-model/ut6",
     titleFont: "DIN2014",
     titleColor: "#DA291C",
     subitems: [

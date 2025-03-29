@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from "gatsby"
+
+// In your component:
+<Link to="/page/123/foo">Go to page</Link>
 
 const FeatureNavCard = ({ product }) => {
   // Destructure product data
@@ -16,13 +20,13 @@ const FeatureNavCard = ({ product }) => {
     <div className="w-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
       {/* Image container with fixed aspect ratio */}
       <div className="relative h-0 pb-[66.67%] overflow-hidden">
-        <a href={productLink} className="block absolute inset-0">
+        <Link to={productLink} className="block absolute inset-0">
           <img
             src={activeSubitem.image}
             alt={`${title} ${activeSubitem.name}`}
             className="absolute w-full transition-transform duration-500 hover:scale-105"
           />
-        </a>
+        </Link>
       </div>
 
       {/* Title */}
