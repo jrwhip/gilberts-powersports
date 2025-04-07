@@ -62,12 +62,6 @@ const FeatureNavCard = ({ product }) => {
         ))}
       </div>
 
-      {/* Description */}
-      <div className="px-4 pb-4">
-        <p className="h-20 text-gray-600 text-sm leading-relaxed overflow-hidden">
-          {activeSubitem.description}
-        </p>
-      </div>
     </div>
   );
 };

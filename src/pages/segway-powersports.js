@@ -50,11 +50,6 @@ const featuredNavs = [
           "https://jaredwhipplellc-765105907.imgix.net/segway/ut6-m-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
         description: "Spacious design for small teams.",
       },
-      {
-        name: "P Crew",
-        image: "/images/ut10-p-crew.jpg",
-        description: "Versatile performance for groups.",
-      },
     ],
   },
   {
