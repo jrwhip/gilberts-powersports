@@ -60,7 +60,7 @@ const featuredNavs = [
   {
     title: "UT 10",
     id: "UT10",
-    productLink: "/ut10",
+    productLink: "/segway-model/ut10",
     titleFont: "DIN2014",
     titleColor: "#DA291C",
     subitems: [
@@ -81,7 +81,7 @@ const featuredNavs = [
   {
     title: "UT 10 Crew",
     id: "UT10Crew",
-    productLink: "/ut10",
+    productLink: "/segway-model/ut10",
     titleFont: "DIN2014",
     titleColor: "#DA291C",
     subitems: [
@@ -102,7 +102,7 @@ const featuredNavs = [
   {
     title: "Villian",
     id: "VILLIAN",
-    productLink: "/products/sx20",
+    productLink: "/segway-model/sx20",
     titleFont: "DIN2014",
     titleColor: "#DA291C",
     subitems: [
@@ -129,7 +129,7 @@ const featuredNavs = [
   {
     title: "Super Villian",
     id: "SUPERVILLIAN",
-    productLink: "/products/sx20",
+    productLink: "/segway-model/sx20",
     titleFont: "DIN2014",
     titleColor: "#DA291C",
     subitems: [

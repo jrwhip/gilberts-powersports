@@ -1,15 +1,13 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "gatsby";
 import {
   Dialog,
   DialogPanel,
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-  Popover,
-  PopoverButton,
   PopoverGroup,
-  PopoverPanel,
 } from "@headlessui/react";
 import {
   Bars3Icon,
@@ -94,12 +92,18 @@ export default function Header() {
           <a href="#" className="text-sm/6 font-semibold text-gray-900">
             Segway Accessories
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <Link
+            to="../services"
+            className="text-sm/6 font-semibold text-gray-900"
+          >
             Service Center
-          </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          </Link>
+          <Link
+            to="../mccormick"
+            className="text-sm/6 font-semibold text-gray-900"
+          >
             McCormick
-          </a>
+          </Link>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm/6 font-semibold text-gray-900">
