@@ -1,5 +1,6 @@
 import * as React from "react";
 import SegwayLayout from "../../components/segway-layout";
+import SegwaySelector from "../../components/segway-selector/segway-selector";
 
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
@@ -40,9 +41,9 @@ export default function ModelPage({ params }) {
               <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
                 <div className="text-center">
                   <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
-                    {modles.ut6.name}
+                    {modles[params.modelId]?.name}
                   </h1>
-                  <h2>Starting at {modles.ut6.price}*</h2>
+                  <h2>Starting at {modles[params.modelId]?.price}*</h2>
                   <p className="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
                     *MSRP does not include freight prep or dealer setup
                   </p>
@@ -63,6 +64,7 @@ export default function ModelPage({ params }) {
             </div>
           </div>
         </div>
+        <SegwaySelector />
       </SegwayLayout>
     </>
   );
