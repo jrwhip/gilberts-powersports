@@ -12,7 +12,7 @@ import { Testimonials } from '@/components/Testimonials'
 
 const segwaySlides = [
   {
-    video: "videos/kristi-Site-hero.m4v",
+    video: "videos/kristi-site-hero.m4v",
     title: "Discover the Journey",
     subtitle: "Experience the ride of a lifetime",
   },
