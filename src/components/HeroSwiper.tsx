@@ -1,28 +1,25 @@
-// components/HeroSwiper.tsx
-'use client'; // Required for Next.js Client Component
+'use client';
 
 import { useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { Swiper as SwiperType } from 'swiper'; // Correct type
+import { Swiper as SwiperType } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import './hero-swiper.css';
+import './HeroSwiper.module.css';
 
-// Define slide interface
 interface Slide {
   video: string;
   title: string;
   subtitle: string;
 }
 
-// Define props interface
 interface HeroSwiperProps {
   slides: Slide[];
 }
 
-const HeroSwiper = ({ slides }: HeroSwiperProps) => {
+export function HeroSwiper({ slides }: HeroSwiperProps) {
   const swiperRef = useRef<SwiperType | null>(null);
 
   useEffect(() => {
@@ -52,7 +49,7 @@ const HeroSwiper = ({ slides }: HeroSwiperProps) => {
       pagination={{ clickable: true }}
       navigation={true}
       modules={[Autoplay, Pagination, Navigation]}
-      onSwiper={swiper => (swiperRef.current = swiper)} // Set ref here
+      onSwiper={swiper => (swiperRef.current = swiper)}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -69,6 +66,4 @@ const HeroSwiper = ({ slides }: HeroSwiperProps) => {
       ))}
     </Swiper>
   );
-};
-
-export default HeroSwiper;
+}
