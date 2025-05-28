@@ -164,6 +164,18 @@ export default function Home() {
             ))}
           </div>
         </div>
+        <ContentWithStickyImage
+          imageSrc="//jaredwhipplellc-765105907.imgix.net/segway/segway-for-work-chainsaw.jpg?q=80&w=808&h=479&auto=format&fit=clip"
+          imageAlt="segway and man with chainsaw"
+          eyebrowText="Farm smarter"
+          title="Revolutionize Farm Work"
+          subtitle="The Segway UT10 brings efficiency and power to your daily farm tasks with a design built to handle the toughest jobs from sunrise to sunset."
+          introParagraph="Tackle farm chores with confidence using this rugged utility vehicle made to take on mud, rocks, and whatever else your land presents. It’s a dependable workhorse designed for the demands of real farm life."
+          features={features}
+          mainContent="From checking livestock to maintaining fences, the UT10 handles it all. Its durable construction stands up to daily farm demands while keeping you productive without delays or interruptions. Whether you’re hauling supplies to the barn, inspecting cattle in distant fields, or clearing brush, this vehicle delivers consistent performance."
+          secondaryTitle="Work All Day"
+          secondaryContent="With its 105-horsepower gasoline engine and large fuel capacity, complete farm tasks without stopping to refuel constantly or worrying about losing power in remote areas. It’s built to keep going as long as you do, no matter the size of your farm or the scope of your work."
+        />
         <PrimaryFeatures />
         <SecondaryFeatures />
         <CallToAction />
