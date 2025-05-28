@@ -1,6 +1,6 @@
 import { CallToAction } from '@/components/CallToAction'
 import { Faqs } from '@/components/Faqs'
-import { Footer } from '@/components/Footer'
+import Footer from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { HeroSwiper } from '@/components/HeroSwiper'
