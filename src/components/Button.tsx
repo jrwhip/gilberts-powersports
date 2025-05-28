@@ -15,12 +15,15 @@ const variantStyles = {
     blue: 'bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600',
     white:
       'bg-white text-slate-900 hover:bg-blue-50 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white',
+    segway: 'bg-segway text-white hover:bg-segway/90 hover:text-slate-100 active:bg-segway/80 active:text-slate-300 focus-visible:outline-segway',
   },
   outline: {
     slate:
       'ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300',
     white:
       'ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white',
+    segway:
+      'ring-segway text-segway hover:bg-segway/10 hover:ring-segway/80 active:bg-segway/20 active:text-segway/80 focus-visible:outline-segway',
   },
 }
 

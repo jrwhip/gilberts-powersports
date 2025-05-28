@@ -37,4 +37,12 @@
   --font-display: var(--font-lexend);
 
   --container-2xl: 40rem;
+
+  --color-segway: #DA291C;
+}
+
+@layer utilities {
+  .bg-segway {
+    background-color: #DA291C;
+  }
 }
