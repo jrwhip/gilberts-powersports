@@ -4,13 +4,13 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { HeroSwiper } from '@/components/HeroSwiper'
-import ContentWithStickyImage from '@/components/ContentWithStickyImage';
+import ContentWithStickyImage from '@/components/ContentWithStickyImage'
+import CardEdgeToEdgeCardMobile from '@/components/CardEdgeToEdgeCardMobile'
 import FeatureNavCard from '@/components/FeatureNavCard'
 import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Testimonials } from '@/components/Testimonials'
-import { TruckIcon, FunnelIcon, GlobeAltIcon } from "@heroicons/react/20/solid";
 
 const segwaySlides = [
   {
@@ -196,6 +196,7 @@ export default function Home() {
           secondaryTitle="Work All Day"
           secondaryContent="With its 105-horsepower gasoline engine and large fuel capacity, complete farm tasks without stopping to refuel constantly or worrying about losing power in remote areas. It’s built to keep going as long as you do, no matter the size of your farm or the scope of your work."
         />
+        <CardEdgeToEdgeCardMobile />
         <PrimaryFeatures />
         <SecondaryFeatures />
         <CallToAction />
