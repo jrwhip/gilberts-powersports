@@ -10,13 +10,13 @@ import {
 
 // Type definitions
 interface Feature {
-  icon?: React.ComponentType<{ className?: string; "aria-hidden"?: boolean; style?: React.CSSProperties }>;
+  icon?: typeof CloudArrowUpIcon;
   title: string;
   description: string;
 }
 
 interface FeatureItemProps {
-  icon: React.ComponentType<{ className?: string; "aria-hidden"?: boolean; style?: React.CSSProperties }>;
+  icon: typeof CloudArrowUpIcon;
   title: string;
   description: string;
   highlightColor: string;
@@ -45,7 +45,7 @@ const FeatureItem: React.FC<FeatureItemProps> = ({
 }) => (
   <li className="flex gap-x-3">
     <Icon
-      aria-hidden="true"
+      aria-hidden={true}
       className="mt-1 size-5 flex-none"
       style={{ color: highlightColor }} // Use inline style for dynamic color
     />

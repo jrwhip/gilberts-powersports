@@ -4,11 +4,13 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { HeroSwiper } from '@/components/HeroSwiper'
+import ContentWithStickyImage from '@/components/ContentWithStickyImage';
 import FeatureNavCard from '@/components/FeatureNavCard'
 import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Testimonials } from '@/components/Testimonials'
+import { TruckIcon, FunnelIcon, GlobeAltIcon } from "@heroicons/react/20/solid";
 
 const segwaySlides = [
   {
@@ -139,6 +141,27 @@ const featuredNavs = [
         description: "Compact power for solo adventures.",
       },
     ],
+  },
+];
+
+const features = [
+  {
+    title: "All-Terrain Mobility",
+    description:
+      "Navigate rough farm terrain with ease using the UT10's rugged design and high ground clearance built for tough conditions. Cross muddy fields, rocky paths, or uneven hills without getting stuck or slowing down.",
+    icon: GlobeAltIcon,
+  },
+  {
+    title: "Heavy Duty Hauling",
+    description:
+      "Transport feed, tools, and equipment across the farm with 1,500 lb capacity to get every job done efficiently. Load up hay bales, fencing materials, or any heavy items you need moved with ease.",
+    icon: TruckIcon,
+  },
+  {
+    title: "Powerful Gas Engine",
+    description:
+      "Tackle big farm jobs with a 1000cc twin-cylinder engine pumping out 105 horsepower. Keep working all day with a 10.6-gallon fuel tank that won’t quit before you do.",
+    icon: FunnelIcon,
   },
 ];
 
