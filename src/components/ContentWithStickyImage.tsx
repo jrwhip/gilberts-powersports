@@ -6,17 +6,20 @@ import {
   CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
+  GlobeAltIcon,
+  TruckIcon,
+  FunnelIcon,
 } from "@heroicons/react/20/solid";
 
 // Type definitions
 interface Feature {
-  icon?: typeof CloudArrowUpIcon;
+  icon?: 'cloud' | 'lock' | 'server' | 'globe' | 'truck' | 'funnel';
   title: string;
   description: string;
 }
 
 interface FeatureItemProps {
-  icon: typeof CloudArrowUpIcon;
+  icon: 'cloud' | 'lock' | 'server' | 'globe' | 'truck' | 'funnel';
   title: string;
   description: string;
   highlightColor: string;
@@ -38,23 +41,37 @@ interface ContentWithStickyImageProps {
 
 // Feature item component to make the list items reusable
 const FeatureItem: React.FC<FeatureItemProps> = ({ 
-  icon: Icon, 
+  icon, 
   title, 
   description, 
   highlightColor 
-}) => (
-  <li className="flex gap-x-3">
-    <Icon
-      aria-hidden={true}
-      className="mt-1 size-5 flex-none"
-      style={{ color: highlightColor }} // Use inline style for dynamic color
-    />
-    <span>
-      <strong className="font-semibold text-gray-900">{title}</strong>{" "}
-      {description}
-    </span>
-  </li>
-);
+}) => {
+  // Map icon strings to actual components
+  const iconMap = {
+    cloud: CloudArrowUpIcon,
+    lock: LockClosedIcon,
+    server: ServerIcon,
+    globe: GlobeAltIcon,
+    truck: TruckIcon,
+    funnel: FunnelIcon,
+  };
+
+  const Icon = iconMap[icon];
+
+  return (
+    <li className="flex gap-x-3">
+      <Icon
+        aria-hidden={true}
+        className="mt-1 size-5 flex-none"
+        style={{ color: highlightColor }} // Use inline style for dynamic color
+      />
+      <span>
+        <strong className="font-semibold text-gray-900">{title}</strong>{" "}
+        {description}
+      </span>
+    </li>
+  );
+};
 
 const ContentWithStickyImage: React.FC<ContentWithStickyImageProps> = ({
   imageSrc,
@@ -70,7 +87,7 @@ const ContentWithStickyImage: React.FC<ContentWithStickyImageProps> = ({
   highlightColor = "#DA291C", // Default to your requested color
 }) => {
   // Default feature icons if not provided
-  const defaultIcons = [CloudArrowUpIcon, LockClosedIcon, ServerIcon];
+  const defaultIcons: Array<'cloud' | 'lock' | 'server'> = ['cloud', 'lock', 'server'];
 
   return (
     <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">

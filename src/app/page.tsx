@@ -147,21 +147,18 @@ const featuredNavs = [
 const features = [
   {
     title: "All-Terrain Mobility",
-    description:
-      "Navigate rough farm terrain with ease using the UT10's rugged design and high ground clearance built for tough conditions. Cross muddy fields, rocky paths, or uneven hills without getting stuck or slowing down.",
-    icon: GlobeAltIcon,
+    description: "Navigate rough farm terrain with ease...",
+    icon: 'globe' as const, // Add 'as const'
   },
   {
-    title: "Heavy Duty Hauling",
-    description:
-      "Transport feed, tools, and equipment across the farm with 1,500 lb capacity to get every job done efficiently. Load up hay bales, fencing materials, or any heavy items you need moved with ease.",
-    icon: TruckIcon,
+    title: "Heavy Duty Hauling", 
+    description: "Transport feed, tools, and equipment...",
+    icon: 'truck' as const, // Add 'as const'
   },
   {
     title: "Powerful Gas Engine",
-    description:
-      "Tackle big farm jobs with a 1000cc twin-cylinder engine pumping out 105 horsepower. Keep working all day with a 10.6-gallon fuel tank that won’t quit before you do.",
-    icon: FunnelIcon,
+    description: "Tackle big farm jobs with a 1000cc...",
+    icon: 'funnel' as const, // Add 'as const'
   },
 ];
 
