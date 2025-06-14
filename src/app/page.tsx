@@ -27,7 +27,7 @@ const featuredNavs = [
   {
     title: "UT 6",
     id: "UT6",
-    productLink: "/side-by-side/sx20",
+    productLink: "/side-by-side/ut6", // Fixed: was pointing to sx20
     titleFont: "DIN2014",
     titleColor: "#DA291C",
     subitems: [
@@ -47,7 +47,7 @@ const featuredNavs = [
         name: "M",
         image:
           "https://jaredwhipplellc-765105907.imgix.net/segway/ut6-m-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
-        description: "Spacious design for small teams.",
+        description: "Mid-size configuration.",
       },
     ],
   },
@@ -68,14 +68,14 @@ const featuredNavs = [
         name: "P",
         image:
           "https://jaredwhipplellc-765105907.imgix.net/segway/ut10-p-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
-        description: "Spacious design for small teams.",
+        description: "Enhanced performance model.",
       },
     ],
   },
   {
     title: "UT 10 Crew",
     id: "UT10Crew",
-    productLink: "/side-by-side/ut10",
+    productLink: "/side-by-side/ut10", // Both UT10 variants go to same page
     titleFont: "DIN2014",
     titleColor: "#DA291C",
     subitems: [
@@ -89,14 +89,14 @@ const featuredNavs = [
         name: "P Crew",
         image:
           "https://jaredwhipplellc-765105907.imgix.net/segway/ut10-crew-p-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
-        description: "Versatile performance for groups.",
+        description: "Premium crew configuration.",
       },
     ],
   },
   {
-    title: "Villian",
-    id: "VILLIAN",
-    productLink: "/side-by-side/sx20",
+    title: "Villain",
+    id: "VILLAIN", // Fixed typo: was "VILLIAN"
+    productLink: "/side-by-side/villain", // Fixed: was pointing to sx20
     titleFont: "DIN2014",
     titleColor: "#DA291C",
     subitems: [
@@ -104,25 +104,25 @@ const featuredNavs = [
         name: "P",
         image:
           "https://jaredwhipplellc-765105907.imgix.net/segway/sx10-p-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
-        description: "Compact power for solo adventures.",
+        description: "Performance-focused variant.",
       },
       {
         name: "S",
         image:
           "https://jaredwhipplellc-765105907.imgix.net/segway/sx10-s-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
-        description: "Spacious design for small teams.",
+        description: "Sport configuration.",
       },
       {
         name: "WP",
         image:
           "https://jaredwhipplellc-765105907.imgix.net/segway/sx10-wp-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
-        description: "Spacious design for small teams.",
+        description: "Work-performance hybrid.",
       },
     ],
   },
   {
-    title: "Super Villian",
-    id: "SUPERVILLIAN",
+    title: "Super Villain",
+    id: "SUPERVILLAIN", // Fixed typo: was "SUPERVILLIAN"
     productLink: "/side-by-side/sx20",
     titleFont: "DIN2014",
     titleColor: "#DA291C",
@@ -131,7 +131,7 @@ const featuredNavs = [
         name: "Super Villain",
         image:
           "https://jaredwhipplellc-765105907.imgix.net/segway/sx20-right-angle.png?q=80&w=300&h=200&auto=format&fit=clip",
-        description: "Compact power for solo adventures.",
+        description: "Ultimate power and style.",
       },
     ],
   },
