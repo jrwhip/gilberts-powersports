@@ -1,6 +1,7 @@
 'use client';
 
 import React from "react";
+import Image from "next/image";
 
 interface NavigationItem {
   name: string;
@@ -73,10 +74,13 @@ export default function SimplifiedFooter() {
       <div className="mx-auto max-w-7xl px-6 py-12 md:py-16 lg:px-8">
         <div className="lg:grid lg:grid-cols-3 lg:gap-8">
           <div className="space-y-6">
-            <img
+            <Image
               alt="Company logo"
               src="/img/gilbert-logo-text-white.svg"
+              width={200}
+              height={48}
               className="h-12"
+              priority
             />
             <p className="text-xl text-gray-100">
               Making the world a better place through innovative technology
