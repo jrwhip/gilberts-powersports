@@ -119,7 +119,7 @@ export default function AutomotiveRepairs() {
                   <h3 className="ml-4 text-lg font-semibold leading-8 text-gray-900">Four Generations of Experience</h3>
                 </div>
                 <p className="mt-4 text-base leading-7 text-gray-600">
-                  Our family has been serving the automotive needs of our community for four generations. This deep experience means we've seen it all and know how to fix it right the first time.
+                  Our family has been serving the automotive needs of our community for four generations. This deep experience means we&lsqup;ve seen it all and know how to fix it right the first time.
                 </p>
               </div>
               
@@ -133,7 +133,7 @@ export default function AutomotiveRepairs() {
                   <h3 className="ml-4 text-lg font-semibold leading-8 text-gray-900">Honest, Upfront Pricing</h3>
                 </div>
                 <p className="mt-4 text-base leading-7 text-gray-600">
-                  No surprises, no hidden fees. We provide detailed estimates and explain exactly what work needs to be done and why. You'll always know what you're paying for.
+                  No surprises, no hidden fees. We provide detailed estimates and explain exactly what work needs to be done and why. You&lsqup;ll always know what you&lsqup;re paying for.
                 </p>
               </div>
 
