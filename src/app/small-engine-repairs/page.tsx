@@ -1,6 +1,6 @@
 import { Header } from '@/components/Header'
 import { Container } from '@/components/Container'
-import { CallToAction } from '@/components/CallToAction'
+import { ServiceCallToAction } from '@/components/ServiceCallToAction'
 import ContentWithStickyImage from '@/components/ContentWithStickyImage'
 import Footer from '@/components/Footer'
 
@@ -132,30 +132,9 @@ export default function SmallEngineRepairs() {
           </Container>
         </section>
 
-        {/* Call to Action Banner */}
-        <section className="bg-orange-600 py-16 sm:py-20">
-          <Container>
-            <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                CALL OR COME IN FOR AN ESTIMATE
-              </h2>
-              <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-orange-100">
-                Don't let a broken small engine slow you down. Bring it in for a quick diagnosis and honest estimate.
-              </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                  href="tel:+1234567890"
-                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-orange-600 shadow-sm hover:bg-orange-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >
-                  Call Now
-                </a>
-                <a href="#contact" className="text-sm font-semibold leading-6 text-white">
-                  Visit Our Shop <span aria-hidden="true">→</span>
-                </a>
-              </div>
-            </div>
-          </Container>
-        </section>
+        <ServiceCallToAction 
+          description="Don't let a broken small engine slow you down. Bring it in for a quick diagnosis and honest estimate."
+        />
       </main>
       <Footer />
     </>

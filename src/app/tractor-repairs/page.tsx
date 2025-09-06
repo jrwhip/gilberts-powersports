@@ -1,6 +1,6 @@
 import { Header } from '@/components/Header'
 import { Container } from '@/components/Container'
-import { CallToAction } from '@/components/CallToAction'
+import { ServiceCallToAction } from '@/components/ServiceCallToAction'
 import ContentWithStickyImage from '@/components/ContentWithStickyImage'
 import Footer from '@/components/Footer'
 
@@ -46,7 +46,7 @@ export default function TractorRepairs() {
 
         {/* Main Content with Sticky Image */}
         <ContentWithStickyImage
-          imageSrc="https://images.unsplash.com/photo-1574090681879-5296d996ac44?q=80&w=912&h=608&auto=format&fit=crop"
+          imageSrc="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=912&h=608&auto=format&fit=crop"
           imageAlt="Professional tractor repair in modern shop facility"
           eyebrowText="Expert Service"
           title="Professional Tractor Repair"
@@ -85,30 +85,9 @@ export default function TractorRepairs() {
           </Container>
         </section>
 
-        {/* Call to Action Banner */}
-        <section className="bg-orange-600 py-16 sm:py-20">
-          <Container>
-            <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                CALL OR COME IN FOR AN ESTIMATE
-              </h2>
-              <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-orange-100">
-                Get your farm equipment running at peak performance. Contact us today for a free estimate on your tractor repair needs.
-              </p>
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                  href="tel:+1234567890"
-                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-orange-600 shadow-sm hover:bg-orange-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                >
-                  Call Now
-                </a>
-                <a href="#contact" className="text-sm font-semibold leading-6 text-white">
-                  Visit Our Shop <span aria-hidden="true">→</span>
-                </a>
-              </div>
-            </div>
-          </Container>
-        </section>
+        <ServiceCallToAction 
+          description="Get your farm equipment running at peak performance. Contact us today for a free estimate on your tractor repair needs."
+        />
       </main>
       <Footer />
     </>
