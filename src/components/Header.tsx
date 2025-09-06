@@ -77,10 +77,10 @@ function ServicesDropdown() {
               </svg>
             </div>
             <div className="flex-auto">
-              <a href="/tractor-repairs" className="block font-semibold text-gray-900">
+              <Link href="/tractor-repairs" className="block font-semibold text-gray-900">
                 Tractor Repairs
                 <span className="absolute inset-0"></span>
-              </a>
+              </Link>
               <p className="mt-1 text-gray-600">Farm equipment repair and maintenance</p>
             </div>
           </div>
@@ -91,10 +91,10 @@ function ServicesDropdown() {
               </svg>
             </div>
             <div className="flex-auto">
-              <a href="/small-engine-repairs" className="block font-semibold text-gray-900">
+              <Link href="/small-engine-repairs" className="block font-semibold text-gray-900">
                 Small Engine Repairs
                 <span className="absolute inset-0"></span>
-              </a>
+              </Link>
               <p className="mt-1 text-gray-600">Lawn mowers, chainsaws, and more</p>
             </div>
           </div>
@@ -105,10 +105,10 @@ function ServicesDropdown() {
               </svg>
             </div>
             <div className="flex-auto">
-              <a href="/automotive-repairs" className="block font-semibold text-gray-900">
+              <Link href="/automotive-repairs" className="block font-semibold text-gray-900">
                 Automotive Repairs
                 <span className="absolute inset-0"></span>
-              </a>
+              </Link>
               <p className="mt-1 text-gray-600">Complete automotive care and service</p>
             </div>
           </div>
@@ -119,10 +119,10 @@ function ServicesDropdown() {
               </svg>
             </div>
             <div className="flex-auto">
-              <a href="/atv-utv-repairs" className="block font-semibold text-gray-900">
+              <Link href="/atv-utv-repairs" className="block font-semibold text-gray-900">
                 ATV/UTV Repairs
                 <span className="absolute inset-0"></span>
-              </a>
+              </Link>
               <p className="mt-1 text-gray-600">Off-road vehicle service and repair</p>
             </div>
           </div>
