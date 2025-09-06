@@ -129,7 +129,7 @@ export default function AtvUtvRepairs() {
           <Container>
             <div className="mx-auto max-w-2xl lg:text-center">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Work or Play, We've Got You Covered
+                Work or Play, We&lsquove Got You Covered
               </h2>
             </div>
             
