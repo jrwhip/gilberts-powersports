@@ -190,6 +190,29 @@ export default function Home() {
           secondaryContent="With its 105-horsepower gasoline engine and large fuel capacity, complete farm tasks without stopping to refuel constantly or worrying about losing power in remote areas. It’s built to keep going as long as you do, no matter the size of your farm or the scope of your work."
         />
         <CardEdgeToEdgeCardMobile />
+        
+        {/* Gilbert Power Sports CTA */}
+        <section className="bg-orange-600 py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                CALL OR COME IN FOR AN ESTIMATE
+              </h2>
+              <p className="mt-6 text-lg text-orange-100 max-w-3xl mx-auto">
+                Gilbert Power Sports - your authorized Segway dealer with four generations of power equipment expertise. 
+                From sales to service, we've got you covered.
+              </p>
+              <div className="mt-8 flex justify-center gap-4">
+                <a href="tel:+1234567890" className="rounded-md bg-white px-6 py-3 text-sm font-semibold text-orange-600 shadow-sm hover:bg-orange-50">
+                  Call Now
+                </a>
+                <a href="/contact" className="rounded-md border-2 border-white px-6 py-3 text-sm font-semibold text-white hover:bg-white hover:text-orange-600">
+                  Visit Our Shop
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>

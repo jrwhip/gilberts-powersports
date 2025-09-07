@@ -154,7 +154,7 @@ function MobileNavigation() {
         <MobileNavLink href="/small-engine-repairs">Small Engine Repairs</MobileNavLink>
         <MobileNavLink href="/automotive-repairs">Automotive Repairs</MobileNavLink>
         <MobileNavLink href="/atv-utv-repairs">ATV/UTV Repairs</MobileNavLink>
-        <MobileNavLink href="#pricing">Accessories</MobileNavLink>
+        <MobileNavLink href="/accessories">Accessories</MobileNavLink>
         <hr className="m-2 border-slate-300/40" />
         <MobileNavLink href="/login">Sign in</MobileNavLink>
       </PopoverPanel>
@@ -174,7 +174,7 @@ export function Header() {
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="/mccormick">McCormick</NavLink>
               <ServicesDropdown />
-              <NavLink href="#pricing">Accessories</NavLink>
+              <NavLink href="/accessories">Accessories</NavLink>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">

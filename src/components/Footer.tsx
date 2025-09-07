@@ -27,9 +27,9 @@ interface Navigation {
 
 const navigation: Navigation = {
   main: [
-    { name: "About", href: "#" },
+    { name: "About", href: "/about" },
     { name: "Service Center", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "Contact", href: "/contact" },
   ],
   hours: [
     { day: "Monday - Friday", hours: "9:00 AM - 6:00 PM" },

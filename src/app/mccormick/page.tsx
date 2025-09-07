@@ -92,20 +92,110 @@ export default function McCormickPage() {
           </Container>
         </section>
 
+        {/* Video Section */}
+        <section className="py-16 bg-white">
+          <Container>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900">See McCormick in Action</h2>
+              <p className="mt-4 text-lg text-gray-600">
+                Watch the McCormick RS58 X4 in action and see why it's the choice of professionals worldwide.
+              </p>
+            </div>
+            <div className="max-w-4xl mx-auto">
+              <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl">
+                <iframe 
+                  src="https://www.youtube.com/embed/5QL1XkPnKL0"
+                  title="McCormick RS58 X4 Tractor Overview"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+            </div>
+          </Container>
+        </section>
+
+        {/* Brochure Section */}
+        <section className="py-16 bg-gray-50">
+          <Container>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-6">
+                  McCormick RS58 X4 Brochure
+                </h2>
+                <p className="text-lg text-gray-600 mb-6">
+                  Get detailed specifications, features, and technical information about 
+                  the McCormick RS58 X4 series tractors. Download our comprehensive brochure 
+                  to learn more about what makes McCormick tractors the professional's choice.
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-center">
+                    <svg className="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Complete technical specifications</span>
+                  </div>
+                  <div className="flex items-center">
+                    <svg className="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">Detailed feature descriptions</span>
+                  </div>
+                  <div className="flex items-center">
+                    <svg className="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-700">High-quality product imagery</span>
+                  </div>
+                </div>
+                <div className="mt-8">
+                  <a 
+                    href="https://www.mccormick.it/wp-content/uploads/2021/05/MC_RS58_X4_Brochure_36p_6697659A1_LR_EN.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-6 py-3 bg-red-700 text-white font-semibold rounded-lg hover:bg-red-800 transition-colors"
+                  >
+                    <svg className="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Download Brochure (PDF)
+                  </a>
+                </div>
+              </div>
+              
+              <div className="relative">
+                <div className="aspect-[3/4] bg-white rounded-lg shadow-xl p-8">
+                  <div className="w-full h-full bg-gradient-to-b from-red-700 to-red-800 rounded-lg flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <svg className="h-16 w-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                      <h3 className="text-xl font-bold mb-2">McCormick RS58 X4</h3>
+                      <p className="text-red-100">Comprehensive Brochure</p>
+                      <p className="text-sm text-red-200 mt-2">36 pages of detailed information</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Container>
+        </section>
+
         {/* CTA Section */}
         <section className="py-16 bg-red-700 text-white">
           <Container className="text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Experience McCormick?</h2>
+            <h2 className="text-3xl font-bold mb-6">CALL OR COME IN FOR AN ESTIMATE</h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Visit our showroom or contact us today to schedule a test drive and see the difference a McCormick tractor can make on your farm.
+              Ready to experience the power and reliability of McCormick tractors? 
+              Visit Gilbert Power Sports to schedule a demonstration and get personalized recommendations.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <button className="px-8 py-3 bg-white text-red-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
+              <a href="/contact" className="px-8 py-3 bg-white text-red-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
                 Contact Us
-              </button>
-              <button className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:bg-opacity-10 transition-colors">
-                Find a Dealer
-              </button>
+              </a>
+              <a href="tel:+1234567890" className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:bg-opacity-10 transition-colors">
+                Call (123) 456-7890
+              </a>
             </div>
           </Container>
         </section>
