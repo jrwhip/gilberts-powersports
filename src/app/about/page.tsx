@@ -5,6 +5,7 @@ import Footer from '@/components/Footer'
 import Image from 'next/image'
 
 export default function AboutPage() {
+  // FUCKING NOOP CHANGE FOR FUCKING AWS
   return (
     <>
       <Header />
@@ -41,7 +42,7 @@ export default function AboutPage() {
                   <p>
                     Our story began when the first generation Gilbert opened a small shop with nothing but 
                     determination and a desire to help neighbors keep their equipment running. That same 
-                    spirit drives us today, whether we're working on a vintage tractor or the latest 
+                    spirit drives us today, whether we&apos;re working on a vintage tractor or the latest 
                     Segway UTV.
                   </p>
                   
@@ -117,7 +118,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Community</h3>
                 <p className="text-gray-600">
-                  We're your neighbors, committed to serving our local community with pride.
+                  We&apos;re your neighbors, committed to serving our local community with pride.
                 </p>
               </div>
               

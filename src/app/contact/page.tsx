@@ -167,7 +167,7 @@ export default function ContactPage() {
                 <div className="mt-8 p-4 bg-orange-50 rounded-lg border border-orange-200">
                   <h4 className="font-medium text-orange-800 mb-2">Free Estimates</h4>
                   <p className="text-sm text-orange-700">
-                    All estimates are free with no obligation. We'll diagnose your equipment 
+                    All estimates are free with no obligation. We&apos;ll diagnose your equipment 
                     and provide honest recommendations.
                   </p>
                 </div>
@@ -237,7 +237,7 @@ export default function ContactPage() {
           <Container>
             <div className="text-center text-white">
               <h2 className="text-3xl font-bold mb-4">
-                Don't Wait - CALL OR COME IN FOR AN ESTIMATE Today
+                Don&apos;t Wait - CALL OR COME IN FOR AN ESTIMATE Today
               </h2>
               <p className="text-lg text-gray-300 mb-8">
                 Four generations of trusted service means you can count on us to get the job done right

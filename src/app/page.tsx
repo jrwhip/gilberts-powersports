@@ -200,7 +200,7 @@ export default function Home() {
               </h2>
               <p className="mt-6 text-lg text-orange-100 max-w-3xl mx-auto">
                 Gilbert Power Sports - your authorized Segway dealer with four generations of power equipment expertise. 
-                From sales to service, we've got you covered.
+                From sales to service, we&apos;ve got you covered.
               </p>
               <div className="mt-8 flex justify-center gap-4">
                 <a href="tel:+1234567890" className="rounded-md bg-white px-6 py-3 text-sm font-semibold text-orange-600 shadow-sm hover:bg-orange-50">

@@ -98,7 +98,7 @@ export default function McCormickPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900">See McCormick in Action</h2>
               <p className="mt-4 text-lg text-gray-600">
-                Watch the McCormick RS58 X4 in action and see why it's the choice of professionals worldwide.
+                Watch the McCormick RS58 X4 in action and see why it&apos;s the choice of professionals worldwide.
               </p>
             </div>
             <div className="max-w-4xl mx-auto">
@@ -126,7 +126,7 @@ export default function McCormickPage() {
                 <p className="text-lg text-gray-600 mb-6">
                   Get detailed specifications, features, and technical information about 
                   the McCormick RS58 X4 series tractors. Download our comprehensive brochure 
-                  to learn more about what makes McCormick tractors the professional's choice.
+                  to learn more about what makes McCormick tractors the professional&apos;s choice.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center">
