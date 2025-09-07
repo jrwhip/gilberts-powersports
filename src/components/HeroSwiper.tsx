@@ -34,11 +34,11 @@ export function HeroSwiper({ slides }: HeroSwiperProps) {
   }, [])
 
   const handleMouseEnter = () => {
-    swiperRef.current?.autoplay.stop()
+    swiperRef.current?.autoplay?.stop()
   }
 
   const handleMouseLeave = () => {
-    swiperRef.current?.autoplay.start()
+    swiperRef.current?.autoplay?.start()
   }
 
   return (
