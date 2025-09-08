@@ -9,18 +9,13 @@
 <body class="bg-gray-50" >
     <!-- Header -->
     <header id="header"></header>
-
     <!-- Main Content Container -->
     <main id="main-content">
         <!-- Content will be dynamically loaded here -->
     </main>
-
     <!-- Footer -->
     <footer id="footer"></footer>
-
     <!-- Scripts -->
-    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
-    <script src="/js/transitions.js"></script>
     <script src="/js/header.js"></script>
     <script src="/js/footer.js"></script>
     <script>
@@ -187,16 +182,13 @@
                 ]
             }
         };
-
         // Parse URL and render appropriate content
         function loadPageContent() {
             const pathParts = window.location.pathname.split('/').filter(part => part);
-            
             // Check if we're viewing a specific model
             if (pathParts.length === 2 && pathParts[0] === 'side-by-side') {
                 const modelId = pathParts[1];
                 const model = sideBySideModels[modelId];
-                
                 if (model) {
                     renderModelPage(model);
                 } else {
@@ -207,7 +199,6 @@
                 renderOverviewPage();
             }
         }
-
         // Render model overview page
         function renderOverviewPage() {
             document.getElementById('page-title').textContent = 'Side-by-Side Vehicles - Gilbert Power Sports';
@@ -221,7 +212,6 @@
                         </p>
                     </div>
                 </div>
-
                 <!-- Model Grid -->
                 <section class="py-16 bg-white">
                     <div class="container mx-auto px-4">
@@ -266,7 +256,6 @@
                 </section>
             `;
         }
-
         // Render individual model page
         function renderModelPage(model) {
             document.getElementById('page-title').textContent = `${model.name} - Gilbert Power Sports`;
@@ -303,7 +292,6 @@
                         </nav>
                     </div>
                 </div>
-
                 <!-- Product Gallery -->
                 <section class="py-12">
                     <div class="container mx-auto px-4">
@@ -320,11 +308,9 @@
                                     `).join('')}
                                 </div>
                             </div>
-                            
                             <div class="space-y-6">
                                 <h1 class="text-4xl font-bold text-gray-900">${model.name}</h1>
                                 <p class="text-2xl font-semibold text-red-600">${model.price}</p>
-                                
                                 <div class="pt-4 border-t border-gray-200">
                                     <h2 class="text-lg font-medium text-gray-900">Available Colors</h2>
                                     <div class="mt-3 flex space-x-2">
@@ -337,7 +323,6 @@
                                         `).join('')}
                                     </div>
                                 </div>
-                                
                                 <div class="pt-4 border-t border-gray-200">
                                     <h2 class="text-lg font-medium text-gray-900">Key Features</h2>
                                     <ul class="mt-3 space-y-2">
@@ -351,7 +336,6 @@
                                         `).join('')}
                                     </ul>
                                 </div>
-                                
                                 <div class="pt-4">
                                     <button class="w-full bg-red-600 text-white py-3 px-6 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors"
                                             onclick="window.location.href='/contact'">
@@ -365,7 +349,6 @@
                         </div>
                     </div>
                 </section>
-
                 <!-- Specifications -->
                 <section class="bg-gray-50 py-16">
                     <div class="container mx-auto px-4">
@@ -388,7 +371,6 @@
                         </div>
                     </div>
                 </section>
-
                 <!-- Call to Action -->
                 <section class="bg-red-600 text-white py-16">
                     <div class="container mx-auto px-4 text-center">
@@ -409,7 +391,6 @@
                 </section>
             `;
         }
-
         // Render 404 page
         function render404() {
             document.getElementById('page-title').textContent = 'Model Not Found - Gilbert Power Sports';
@@ -424,27 +405,22 @@
                 </div>
             `;
         }
-
         // Navigation functions
         function navigateToModel(modelId, event) {
             event.preventDefault();
             history.pushState({}, '', `/side-by-side/${modelId}`);
             loadPageContent();
         }
-
         function navigateToOverview(event) {
             event.preventDefault();
             history.pushState({}, '', '/side-by-side');
             loadPageContent();
         }
-
         function changeMainImage(imageSrc) {
             document.getElementById('main-image').src = imageSrc;
         }
-
         // Handle browser back/forward buttons
         window.addEventListener('popstate', loadPageContent);
-
         // Initialize page when DOM loads
         document.addEventListener('DOMContentLoaded', loadPageContent);
     </script>
