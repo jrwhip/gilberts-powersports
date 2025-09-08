@@ -103,6 +103,7 @@ class HeaderManager {
                   </div>
                 </div>
                 <a href="/accessories" class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900">Accessories</a>
+                <a href="/about" class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900">About</a>
               </div>
             </div>
             <div class="flex items-center gap-x-5 md:gap-x-8">
@@ -134,6 +135,7 @@ class HeaderManager {
           <a href="/automotive-repairs" class="block w-full p-2">Automotive Repairs</a>
           <a href="/atv-utv-repairs" class="block w-full p-2">ATV/UTV Repairs</a>
           <a href="/accessories" class="block w-full p-2">Accessories</a>
+          <a href="/about" class="block w-full p-2">About</a>
           <hr class="m-2 border-slate-300/40" />
           <a href="/contact" class="block w-full p-2">Contact</a>
         </div>
