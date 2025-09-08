@@ -1484,17 +1484,13 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-/* HTMX page transitions */
-.htmx-settling {
-  opacity: 0;
-}
-
-.htmx-request {
-  opacity: 0.5;
-}
-
+/* Page transition */
 body {
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.page-transition {
+  opacity: 0;
 }
 
 .hover\:-translate-y-1:hover {
