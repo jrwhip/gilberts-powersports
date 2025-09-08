@@ -23,7 +23,7 @@ class HeaderManager {
               <a href="/" aria-label="Home">
                 <div class="h-10 w-auto">
                   <img
-                    src="img/gilbert-full-logo.svg"
+                    src="/img/gilbert-full-logo.svg"
                     alt="Company Logo"
                     width="192"
                     height="40"
@@ -33,7 +33,7 @@ class HeaderManager {
                 </div>
               </a>
               <div class="hidden md:flex md:gap-x-6">
-                <a href="mccormick.html" class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900">McCormick</a>
+                <a href="/mccormick" class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900">McCormick</a>
                 <div class="services-dropdown relative">
                   <button class="services-dropdown-button inline-flex items-center gap-x-1 rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900">
                     Services
@@ -50,7 +50,7 @@ class HeaderManager {
                           </svg>
                         </div>
                         <div class="flex-auto">
-                          <a href="tractor-repairs.html" class="block font-semibold text-gray-900">
+                          <a href="/tractor-repairs" class="block font-semibold text-gray-900">
                             Tractor Repairs
                             <span class="absolute inset-0"></span>
                           </a>
@@ -64,7 +64,7 @@ class HeaderManager {
                           </svg>
                         </div>
                         <div class="flex-auto">
-                          <a href="small-engine-repairs.html" class="block font-semibold text-gray-900">
+                          <a href="/small-engine-repairs" class="block font-semibold text-gray-900">
                             Small Engine Repairs
                             <span class="absolute inset-0"></span>
                           </a>
@@ -78,7 +78,7 @@ class HeaderManager {
                           </svg>
                         </div>
                         <div class="flex-auto">
-                          <a href="automotive-repairs.html" class="block font-semibold text-gray-900">
+                          <a href="/automotive-repairs" class="block font-semibold text-gray-900">
                             Automotive Repairs
                             <span class="absolute inset-0"></span>
                           </a>
@@ -92,7 +92,7 @@ class HeaderManager {
                           </svg>
                         </div>
                         <div class="flex-auto">
-                          <a href="atv-utv-repairs.html" class="block font-semibold text-gray-900">
+                          <a href="/atv-utv-repairs" class="block font-semibold text-gray-900">
                             ATV/UTV Repairs
                             <span class="absolute inset-0"></span>
                           </a>
@@ -102,11 +102,11 @@ class HeaderManager {
                     </div>
                   </div>
                 </div>
-                <a href="accessories.html" class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900">Accessories</a>
+                <a href="/accessories" class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900">Accessories</a>
               </div>
             </div>
             <div class="flex items-center gap-x-5 md:gap-x-8">
-              <a href="contact.html" class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2 bg-segway text-white hover:bg-segway/90 hover:text-slate-100 active:bg-segway/80 active:text-slate-300 focus-visible:outline-segway">
+              <a href="/contact" class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-hidden focus-visible:outline-2 focus-visible:outline-offset-2 bg-segway text-white hover:bg-segway/90 hover:text-slate-100 active:bg-segway/80 active:text-slate-300 focus-visible:outline-segway">
                 <span>
                   Contact <span class="hidden lg:inline">Us</span>
                 </span>
@@ -128,14 +128,14 @@ class HeaderManager {
         
         <!-- Mobile menu panel -->
         <div class="mobile-menu-panel absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 scale-95 opacity-0 pointer-events-none transition duration-150 ease-out">
-          <a href="mccormick.html" class="block w-full p-2">McCormick</a>
-          <a href="tractor-repairs.html" class="block w-full p-2">Tractor Repairs</a>
-          <a href="small-engine-repairs.html" class="block w-full p-2">Small Engine Repairs</a>
-          <a href="automotive-repairs.html" class="block w-full p-2">Automotive Repairs</a>
-          <a href="atv-utv-repairs.html" class="block w-full p-2">ATV/UTV Repairs</a>
-          <a href="accessories.html" class="block w-full p-2">Accessories</a>
+          <a href="/mccormick" class="block w-full p-2">McCormick</a>
+          <a href="/tractor-repairs" class="block w-full p-2">Tractor Repairs</a>
+          <a href="/small-engine-repairs" class="block w-full p-2">Small Engine Repairs</a>
+          <a href="/automotive-repairs" class="block w-full p-2">Automotive Repairs</a>
+          <a href="/atv-utv-repairs" class="block w-full p-2">ATV/UTV Repairs</a>
+          <a href="/accessories" class="block w-full p-2">Accessories</a>
           <hr class="m-2 border-slate-300/40" />
-          <a href="contact.html" class="block w-full p-2">Contact</a>
+          <a href="/contact" class="block w-full p-2">Contact</a>
         </div>
       </header>
     `

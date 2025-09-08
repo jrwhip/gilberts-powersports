@@ -1,8 +1,0 @@
-# AWS Amplify redirects for dynamic side-by-side pages
-/side-by-side/*  /side-by-side.html  200
-
-# Optional: redirect old individual model pages if they were previously accessed
-/side-by-side/ut6.html  /side-by-side/ut6  301
-/side-by-side/ut10.html  /side-by-side/ut10  301
-/side-by-side/sx20.html  /side-by-side/sx20  301
-/side-by-side/villain.html  /side-by-side/villain  301
