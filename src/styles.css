@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* HTMX page transitions */
+.htmx-settling {
+  opacity: 0;
+}
+
+.htmx-request {
+  opacity: 0.5;
+}
+
+body {
+  transition: opacity 0.2s ease-in-out;
+}
