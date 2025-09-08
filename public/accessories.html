@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Segway Accessories - Gilbert Power Sports</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              segway: '#DA291C',
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      .bg-segway {
+        background-color: #da291c;
+      }
+      .text-segway {
+        color: #da291c;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header id="header"></header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <div class="mx-auto max-w-7xl px-4 pt-20 pb-16 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h1
+            class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
+          >
+            Segway Accessories
+          </h1>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Enhance your Segway UTV with premium accessories. From windshields
+            to turn signals, we have everything you need to customize your ride.
+          </p>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <section class="bg-white py-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div
+            class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+            id="accessories-container"
+          >
+            <!-- Accessories will be dynamically inserted here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Installation Services -->
+      <section class="bg-gray-50 py-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-12 text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900">
+              Professional Installation Available
+            </h2>
+            <p class="mt-4 text-lg text-gray-600">
+              Our experienced technicians can install any accessory to ensure
+              proper fit and function.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div class="text-center">
+              <div
+                class="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-orange-600"
+              >
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-4 text-lg font-semibold text-gray-900">
+                Expert Installation
+              </h3>
+              <p class="mt-2 text-gray-600">
+                Professional installation by certified technicians
+              </p>
+            </div>
+
+            <div class="text-center">
+              <div
+                class="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-orange-600"
+              >
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-4 text-lg font-semibold text-gray-900">
+                Quality Guarantee
+              </h3>
+              <p class="mt-2 text-gray-600">
+                All installations come with our workmanship guarantee
+              </p>
+            </div>
+
+            <div class="text-center">
+              <div
+                class="mx-auto flex h-12 w-12 items-center justify-center rounded-lg bg-orange-600"
+              >
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-4 text-lg font-semibold text-gray-900">
+                Fast Service
+              </h3>
+              <p class="mt-2 text-gray-600">
+                Most installations completed same day
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Call to Action -->
+      <section class="bg-orange-600 py-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <h2
+              class="text-3xl font-bold tracking-tight text-white sm:text-4xl"
+            >
+              CALL OR COME IN FOR AN ESTIMATE
+            </h2>
+            <p class="mx-auto mt-6 max-w-3xl text-lg text-orange-100">
+              Need help choosing the right accessories for your Segway? Our
+              experts are here to help you customize your UTV.
+            </p>
+            <div class="mt-8 flex justify-center gap-4">
+              <a
+                href="tel:+1234567890"
+                class="rounded-md bg-white px-6 py-3 text-sm font-semibold text-orange-600 shadow-sm hover:bg-orange-50"
+              >
+                Call Now
+              </a>
+              <a
+                href="contact.html"
+                class="rounded-md border-2 border-white px-6 py-3 text-sm font-semibold text-white hover:bg-white hover:text-orange-600"
+              >
+                Visit Our Shop
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <!-- Scripts -->
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/accessories.js"></script>
+  </body>
+</html>

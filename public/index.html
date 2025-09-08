@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gilbert Power Sports - Four Generation Family Business</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              segway: '#DA291C',
+            },
+          },
+        },
+      }
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      .bg-segway {
+        background-color: #da291c;
+      }
+      .text-segway {
+        color: #da291c;
+      }
+
+      /* Hero Swiper Styles */
+      .hero-swiper {
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .swiper-slide {
+        width: 100%;
+        height: 100%;
+      }
+
+      .slide-content {
+        width: 100%;
+        height: 100%;
+        transition: transform 2.5s ease;
+        transform: scale(1);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide-active .slide-content {
+        transform: scale(1.2);
+      }
+
+      .slide-content video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-position: center top;
+      }
+
+      .overlay {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        z-index: 10;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        font-family: 'Geom Graphic', sans-serif;
+        font-weight: 600;
+        font-style: italic;
+      }
+
+      .overlay h1 {
+        margin: 0;
+        font-size: 2.5em;
+        font-weight: bold;
+      }
+
+      .overlay p {
+        margin: 10px 0 20px;
+        font-size: 1.2em;
+      }
+
+      /* Vertical Pagination */
+      .swiper-pagination {
+        left: auto !important;
+        right: 80px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        width: 10px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 4px !important;
+      }
+
+      .swiper-pagination-bullet {
+        width: 10px !important;
+        height: 10px !important;
+        background: #fff !important;
+        opacity: 0.5 !important;
+        margin: 0 !important;
+        border-radius: 50% !important;
+      }
+
+      .swiper-pagination-bullet-active {
+        opacity: 1 !important;
+        background: #fff !important;
+      }
+
+      /* Prev/Next Buttons */
+      .swiper-button-prev,
+      .swiper-button-next {
+        left: auto !important;
+        right: 20px !important;
+        width: 40px !important;
+        height: 40px !important;
+        color: #fff !important;
+        background: none !important;
+        border: none !important;
+        z-index: 20 !important;
+      }
+
+      .swiper-button-prev {
+        top: auto !important;
+        bottom: 60px !important;
+      }
+
+      .swiper-button-next {
+        top: auto !important;
+        bottom: 10px !important;
+      }
+
+      .swiper-button-prev::after {
+        content: url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="white" stroke-width="2" fill="none"/><path d="M24 12 L16 20 L24 28" stroke="white" stroke-width="2" fill="none"/></svg>') !important;
+        display: block !important;
+      }
+
+      .swiper-button-next::after {
+        content: url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="18" stroke="white" stroke-width="2" fill="none"/><path d="M16 12 L24 20 L16 28" stroke="white" stroke-width="2" fill="none"/></svg>') !important;
+        display: block !important;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header id="header"></header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Swiper -->
+      <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <video
+                src="videos/kristi-site-hero.m4v"
+                muted
+                loop
+                playsinline
+                autoplay
+              ></video>
+              <div class="overlay">
+                <h1>Discover the Journey</h1>
+                <p>Experience the ride of a lifetime</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <video
+                src="videos/ut6-hero-1.m4v"
+                muted
+                loop
+                playsinline
+              ></video>
+              <div class="overlay">
+                <h1>Adventure Awaits</h1>
+                <p>Unleash your wild side</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <video
+                src="videos/super-villain-1.m4v"
+                muted
+                loop
+                playsinline
+              ></video>
+              <div class="overlay">
+                <h1>Ride in Style</h1>
+                <p>Turn heads wherever you go</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <!-- Explore Our Models -->
+      <div class="mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <h2
+          class="mb-8 text-center text-3xl font-bold tracking-tight text-gray-900"
+        >
+          Explore Our Models
+        </h2>
+        <div
+          class="flex flex-wrap justify-center gap-6"
+          id="feature-nav-cards-container"
+        >
+          <!-- FeatureNavCard components will be dynamically inserted here -->
+        </div>
+      </div>
+
+      <!-- Content with Sticky Image (Farm Work Section) -->
+      <div
+        class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+      >
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10"
+        >
+          <!-- Header section -->
+          <div
+            class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
+          >
+            <div class="lg:pr-4">
+              <div class="lg:max-w-lg">
+                <p class="text-base/7 font-semibold" style="color: #da291c">
+                  Farm smarter
+                </p>
+                <h1
+                  class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl"
+                >
+                  Revolutionize Farm Work
+                </h1>
+                <p class="mt-6 text-xl/8 text-gray-700">
+                  The Segway UT10 brings efficiency and power to your daily farm
+                  tasks with a design built to handle the toughest jobs from
+                  sunrise to sunset.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sticky Image -->
+          <div
+            class="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden"
+          >
+            <img
+              alt="segway and man with chainsaw"
+              src="//jaredwhipplellc-765105907.imgix.net/segway/segway-for-work-chainsaw.jpg?q=80&w=808&h=479&auto=format&fit=clip"
+              width="912"
+              height="608"
+              class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+            />
+          </div>
+
+          <!-- Main content -->
+          <div
+            class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8"
+          >
+            <div class="lg:pr-4">
+              <div class="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">
+                <p>
+                  Tackle farm chores with confidence using this rugged utility
+                  vehicle made to take on mud, rocks, and whatever else your
+                  land presents. It's a dependable workhorse designed for the
+                  demands of real farm life.
+                </p>
+
+                <ul role="list" class="mt-8 space-y-8 text-gray-600">
+                  <li class="flex gap-x-3">
+                    <svg
+                      aria-hidden="true"
+                      class="mt-1 size-5 flex-none"
+                      style="color: #da291c"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 2.5C16.27 2.5 19.75 5.98 19.75 10.25C19.75 16.31 12 21.5 12 21.5C12 21.5 4.25 16.31 4.25 10.25C4.25 5.98 7.73 2.5 12 2.5M12 6C10.07 6 8.5 7.57 8.5 9.5C8.5 11.43 10.07 13 12 13C13.93 13 15.5 11.43 15.5 9.5C15.5 7.57 13.93 6 12 6Z"
+                      />
+                    </svg>
+                    <span>
+                      <strong class="font-semibold text-gray-900"
+                        >All-Terrain Mobility</strong
+                      >
+                      Navigate rough farm terrain with ease...
+                    </span>
+                  </li>
+
+                  <li class="flex gap-x-3">
+                    <svg
+                      aria-hidden="true"
+                      class="mt-1 size-5 flex-none"
+                      style="color: #da291c"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"
+                      ></path>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"
+                      ></path>
+                    </svg>
+                    <span>
+                      <strong class="font-semibold text-gray-900"
+                        >Heavy Duty Hauling</strong
+                      >
+                      Transport feed, tools, and equipment...
+                    </span>
+                  </li>
+
+                  <li class="flex gap-x-3">
+                    <svg
+                      aria-hidden="true"
+                      class="mt-1 size-5 flex-none"
+                      style="color: #da291c"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 10V8a4 4 0 118 0v2h1a2 2 0 012 2v6a2 2 0 01-2 2H3a2 2 0 01-2-2v-6a2 2 0 012-2h1V8a4 4 0 014-4V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <span>
+                      <strong class="font-semibold text-gray-900"
+                        >Powerful Gas Engine</strong
+                      >
+                      Tackle big farm jobs with a 1000cc...
+                    </span>
+                  </li>
+                </ul>
+
+                <p class="mt-8">
+                  From checking livestock to maintaining fences, the UT10
+                  handles it all. Its durable construction stands up to daily
+                  farm demands while keeping you productive without delays or
+                  interruptions. Whether you're hauling supplies to the barn,
+                  inspecting cattle in distant fields, or clearing brush, this
+                  vehicle delivers consistent performance.
+                </p>
+
+                <h2
+                  class="mt-16 text-2xl font-bold tracking-tight text-gray-900"
+                >
+                  Work All Day
+                </h2>
+
+                <p class="mt-6">
+                  With its 105-horsepower gasoline engine and large fuel
+                  capacity, complete farm tasks without stopping to refuel
+                  constantly or worrying about losing power in remote areas.
+                  It's built to keep going as long as you do, no matter the size
+                  of your farm or the scope of your work.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Edge to Edge Mobile Component -->
+      <div class="w-full lg:mx-auto lg:max-w-7xl lg:px-8">
+        <div class="overflow-hidden bg-white">
+          <div class="px-0 py-0 sm:p-6">
+            <picture>
+              <!-- Mobile image (default) -->
+              <source
+                media="(max-width: 639px)"
+                srcset="
+                  //jaredwhipplellc-765105907.imgix.net/segway/april-villain-1920x640.png?q=80&w=640&auto=format&fit=clip
+                "
+              />
+              <!-- Tablet image -->
+              <source
+                media="(min-width: 640px) and (max-width: 1023px)"
+                srcset="
+                  //jaredwhipplellc-765105907.imgix.net/segway/april-villain-1920x1080.png?q=80&w=1024&auto=format&fit=clip
+                "
+              />
+              <!-- Desktop image -->
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  //jaredwhipplellc-765105907.imgix.net/segway/april-villain-2000x900.png?q=80&w=2000&auto=format&fit=clip
+                "
+              />
+              <!-- Fallback image -->
+              <img
+                src="//jaredwhipplellc-765105907.imgix.net/segway/april-villain-1920x552.png?q=80&w=1920&auto=format&fit=clip"
+                alt="Villain promotional image"
+                class="h-auto w-full"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gilbert Power Sports CTA -->
+      <section class="bg-orange-600 py-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <h2
+              class="text-3xl font-bold tracking-tight text-white sm:text-4xl"
+            >
+              CALL OR COME IN FOR AN ESTIMATE
+            </h2>
+            <p class="mx-auto mt-6 max-w-3xl text-lg text-orange-100">
+              Gilbert Power Sports - your authorized Segway dealer with four
+              generations of power equipment expertise. From sales to service,
+              we've got you covered.
+            </p>
+            <div class="mt-8 flex justify-center gap-4">
+              <a
+                href="tel:+1234567890"
+                class="rounded-md bg-white px-6 py-3 text-sm font-semibold text-orange-600 shadow-sm hover:bg-orange-50"
+              >
+                Call Now
+              </a>
+              <a
+                href="contact.html"
+                class="rounded-md border-2 border-white px-6 py-3 text-sm font-semibold text-white hover:bg-white hover:text-orange-600"
+              >
+                Visit Our Shop
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/feature-nav-card.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      // Initialize hero swiper
+      document.addEventListener('DOMContentLoaded', function () {
+        const heroSwiper = new Swiper('.hero-swiper', {
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          on: {
+            slideChange: function () {
+              document
+                .querySelectorAll('video')
+                .forEach((video) => video.pause())
+              const activeVideo =
+                this.slides[this.activeIndex].querySelector('video')
+              if (activeVideo) activeVideo.play()
+            },
+          },
+        })
+
+        // Pause autoplay on hover
+        document
+          .querySelector('.hero-swiper')
+          .addEventListener('mouseenter', () => {
+            heroSwiper.autoplay.stop()
+          })
+
+        document
+          .querySelector('.hero-swiper')
+          .addEventListener('mouseleave', () => {
+            heroSwiper.autoplay.start()
+          })
+      })
+    </script>
+  </body>
+</html>
