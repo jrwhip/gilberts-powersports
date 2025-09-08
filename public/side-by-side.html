@@ -3,143 +3,463 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Side-by-Side Vehicles - Gilbert Power Sports</title>
+    <title id="page-title">Side-by-Side Vehicles - Gilbert Power Sports</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              segway: '#DA291C',
+            },
+          },
+        },
+      }
+    </script>
     <style>
-        .bg-segway { background-color: #1a365d; }
-        .text-segway { color: #1a365d; }
+        .bg-segway { background-color: #DA291C; }
+        .text-segway { color: #DA291C; }
     </style>
 </head>
 <body class="bg-gray-50">
     <!-- Header -->
     <header id="header"></header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <div class="bg-segway text-white py-20">
-            <div class="container mx-auto px-4 text-center">
-                <h1 class="text-5xl font-bold mb-6">Side-by-Side Vehicles</h1>
-                <p class="text-xl max-w-3xl mx-auto">
-                    Discover the power and versatility of Segway Powersports side-by-side vehicles. 
-                    Built for adventure, designed for performance.
-                </p>
-            </div>
-        </div>
-
-        <!-- Models Grid -->
-        <section class="py-16 bg-white">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Our Vehicle Lineup</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://jaredwhipplellc-765105907.imgix.net/segway/sx20-right-angle.png?auto=format&fit=clip&w=400" alt="Super Villain SX20" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Super Villain SX20</h3>
-                            <p class="text-gray-600 mb-4">Ultimate power and performance for the most demanding off-road adventures.</p>
-                            <div class="text-lg font-semibold text-red-600 mb-4">Starting at $24,999</div>
-                            <a href="side-by-side/sx20.html" class="inline-block bg-red-600 text-white font-semibold py-2 px-4 rounded hover:bg-red-700 transition-colors">
-                                View Details
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://jaredwhipplellc-765105907.imgix.net/segway/ut10-s-right-angle.png?auto=format&fit=clip&w=400" alt="UT10 Series" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">UT10 Series</h3>
-                            <p class="text-gray-600 mb-4">Versatile utility vehicle perfect for work and recreation.</p>
-                            <div class="text-lg font-semibold text-red-600 mb-4">Starting at $16,999</div>
-                            <a href="side-by-side/ut10.html" class="inline-block bg-red-600 text-white font-semibold py-2 px-4 rounded hover:bg-red-700 transition-colors">
-                                View Details
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://jaredwhipplellc-765105907.imgix.net/segway/ut6-p-right-angle.png?auto=format&fit=clip&w=400" alt="UT6 Series" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">UT6 Series</h3>
-                            <p class="text-gray-600 mb-4">Compact and agile utility vehicle designed for maneuverability and efficiency.</p>
-                            <div class="text-lg font-semibold text-red-600 mb-4">Starting at $12,999</div>
-                            <a href="side-by-side/ut6.html" class="inline-block bg-red-600 text-white font-semibold py-2 px-4 rounded hover:bg-red-700 transition-colors">
-                                View Details
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://jaredwhipplellc-765105907.imgix.net/segway/sx10-p-right-angle.png?auto=format&fit=clip&w=400" alt="Villain Series" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Villain Series</h3>
-                            <p class="text-gray-600 mb-4">Bold design meets serious performance with aggressive styling and dependable capability.</p>
-                            <div class="text-lg font-semibold text-red-600 mb-4">Starting at $19,999</div>
-                            <a href="side-by-side/villain.html" class="inline-block bg-red-600 text-white font-semibold py-2 px-4 rounded hover:bg-red-700 transition-colors">
-                                View Details
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section class="py-16 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Why Choose Segway Powersports?</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="text-center p-6 bg-white rounded-lg shadow">
-                        <div class="text-red-700 text-4xl mb-4">⚡</div>
-                        <h3 class="text-xl font-semibold mb-2">Powerful Performance</h3>
-                        <p class="text-gray-600">High-performance engines and advanced drivetrain systems for maximum capability.</p>
-                    </div>
-                    <div class="text-center p-6 bg-white rounded-lg shadow">
-                        <div class="text-red-700 text-4xl mb-4">🛠️</div>
-                        <h3 class="text-xl font-semibold mb-2">Built to Last</h3>
-                        <p class="text-gray-600">Rugged construction and quality components designed for years of reliable service.</p>
-                    </div>
-                    <div class="text-center p-6 bg-white rounded-lg shadow">
-                        <div class="text-red-700 text-4xl mb-4">🎯</div>
-                        <h3 class="text-xl font-semibold mb-2">Versatile Design</h3>
-                        <p class="text-gray-600">From work applications to recreation, our vehicles adapt to your needs.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="py-16 bg-red-700 text-white">
-            <div class="container mx-auto px-4 text-center">
-                <h2 class="text-3xl font-bold mb-6">CALL OR COME IN FOR AN ESTIMATE</h2>
-                <p class="text-xl mb-8 max-w-2xl mx-auto">
-                    Ready to experience the power and reliability of Segway Powersports vehicles? 
-                    Visit Gilbert Power Sports to schedule a demonstration and get personalized recommendations.
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="contact.html" class="px-8 py-3 bg-white text-red-700 font-semibold rounded-lg hover:bg-gray-100 transition-colors">
-                        Contact Us
-                    </a>
-                    <a href="tel:+1234567890" class="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:bg-opacity-10 transition-colors">
-                        Call (123) 456-7890
-                    </a>
-                </div>
-            </div>
-        </section>
+    <!-- Main Content Container -->
+    <main id="main-content">
+        <!-- Content will be dynamically loaded here -->
     </main>
 
     <!-- Footer -->
     <footer id="footer"></footer>
 
     <!-- Scripts -->
-    <script src="js/components.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script>
+        // Model data
+        const sideBySideModels = {
+            'sx20': {
+                id: 'sx20',
+                name: 'Super Villain SX20',
+                description: 'Ultimate power and performance for the most demanding off-road adventures. The Super Villain is built to conquer any terrain with unmatched style.',
+                price: 'Starting at $24,999',
+                images: [
+                    'https://jaredwhipplellc-765105907.imgix.net/segway/sx20-right-angle.png?auto=format&fit=clip&w=1200',
+                    'https://jaredwhipplellc-765105907.imgix.net/segway/sx20-right-angle.png?auto=format&fit=clip&w=800',
+                    'https://jaredwhipplellc-765105907.imgix.net/segway/sx20-right-angle.png?auto=format&fit=clip&w=600'
+                ],
+                features: [
+                    '1000cc EFI Engine',
+                    '105 HP @ 7000 RPM',
+                    'Advanced Suspension System',
+                    'On-Demand 4WD',
+                    '2500 lb Towing Capacity',
+                    'High-Intensity LED Headlights',
+                    'Digital Display',
+                    'Premium Sport Seating'
+                ],
+                specs: {
+                    'Engine': '1000cc EFI, 4-Stroke',
+                    'Horsepower': '105 HP @ 7000 RPM',
+                    'Transmission': 'Automatic CVT with High/Low/Reverse',
+                    'Drive System': '2WD/4WD with Locking Front Differential',
+                    'Suspension': 'Independent, 12" Travel',
+                    'Ground Clearance': '14 inches',
+                    'Payload Capacity': '1200 lbs',
+                    'Towing Capacity': '2500 lbs',
+                    'Fuel Capacity': '10.5 gallons',
+                    'Wheelbase': '90 inches',
+                    'Overall Dimensions': '130" L x 68" W x 78" H',
+                    'Dry Weight': '1650 lbs'
+                },
+                colors: [
+                    { name: 'Red', value: '#DA291C' },
+                    { name: 'Black', value: '#000000' },
+                    { name: 'Camo', value: '#4A4A3A' }
+                ]
+            },
+            'ut10': {
+                id: 'ut10',
+                name: 'UT10 Series',
+                description: 'Versatile utility vehicle perfect for work and recreation. The UT10 offers the ideal balance of performance, comfort, and capability.',
+                price: 'Starting at $16,999',
+                images: [
+                    'https://jaredwhipplellc-765105907.imgix.net/segway/ut10-s-right-angle.png?auto=format&fit=clip&w=1200',
+                    'https://jaredwhipplellc-765105907.imgix.net/segway/ut10-p-right-angle.png?auto=format&fit=clip&w=800',
+                    'https://jaredwhipplellc-765105907.imgix.net/segway/ut10-crew-s-right-angle.png?auto=format&fit=clip&w=600'
+                ],
+                features: [
+                    '800cc EFI Engine',
+                    '72 HP @ 7000 RPM',
+                    'Independent Suspension',
+                    'Selectable 2WD/4WD',
+                    '2000 lb Towing Capacity',
+                    'LED Lighting Package',
+                    'Digital Gauge Cluster',
+                    'Multiple Seating Configurations'
+                ],
+                specs: {
+                    'Engine': '800cc EFI, 4-Stroke',
+                    'Horsepower': '72 HP @ 7000 RPM',
+                    'Transmission': 'Automatic CVT with High/Low/Reverse',
+                    'Drive System': '2WD/4WD',
+                    'Suspension': 'Independent, 10" Travel',
+                    'Ground Clearance': '12 inches',
+                    'Payload Capacity': '1000 lbs',
+                    'Towing Capacity': '2000 lbs',
+                    'Fuel Capacity': '8.9 gallons',
+                    'Wheelbase': '84 inches',
+                    'Overall Dimensions': '120" L x 64" W x 74" H',
+                    'Dry Weight': '1350 lbs'
+                },
+                colors: [
+                    { name: 'Red', value: '#DA291C' },
+                    { name: 'Blue', value: '#0056B8' },
+                    { name: 'Green', value: '#006B54' }
+                ]
+            },
+            'ut6': {
+                id: 'ut6',
+                name: 'UT6 Series',
+                description: 'Compact and agile utility vehicle designed for maneuverability and efficiency. Perfect for tight spaces and precision work.',
+                price: 'Starting at $12,999',
+                images: [
+                    'https://jaredwhipplellc-765105907.imgix.net/segway/ut6-p-right-angle.png?auto=format&fit=clip&w=1200',
+                    'https://jaredwhipplellc-765105907.imgix.net/segway/ut6-s-right-angle.png?auto=format&fit=clip&w=800',
+                    'https://jaredwhipplellc-765105907.imgix.net/segway/ut6-m-right-angle.png?auto=format&fit=clip&w=600'
+                ],
+                features: [
+                    '600cc EFI Engine',
+                    '45 HP @ 6500 RPM',
+                    'Compact Design',
+                    'Selectable 2WD/4WD',
+                    '1200 lb Towing Capacity',
+                    'LED Headlights',
+                    'Digital Display',
+                    'Ergonomic Seating'
+                ],
+                specs: {
+                    'Engine': '600cc EFI, 4-Stroke',
+                    'Horsepower': '45 HP @ 6500 RPM',
+                    'Transmission': 'Automatic CVT with High/Low/Reverse',
+                    'Drive System': '2WD/4WD',
+                    'Suspension': 'Independent, 8" Travel',
+                    'Ground Clearance': '10 inches',
+                    'Payload Capacity': '600 lbs',
+                    'Towing Capacity': '1200 lbs',
+                    'Fuel Capacity': '6.5 gallons',
+                    'Wheelbase': '70 inches',
+                    'Overall Dimensions': '98" L x 58" W x 70" H',
+                    'Dry Weight': '1050 lbs'
+                },
+                colors: [
+                    { name: 'Red', value: '#DA291C' },
+                    { name: 'Gray', value: '#6C6E70' },
+                    { name: 'Orange', value: '#FF6B35' }
+                ]
+            },
+            'villain': {
+                id: 'villain',
+                name: 'Villain Series',
+                description: 'Bold design meets serious performance. The Villain series offers aggressive styling with dependable capability.',
+                price: 'Starting at $19,999',
+                images: [
+                    'https://jaredwhipplellc-765105907.imgix.net/segway/sx10-p-right-angle.png?auto=format&fit=clip&w=1200',
+                    'https://jaredwhipplellc-765105907.imgix.net/segway/sx10-s-right-angle.png?auto=format&fit=clip&w=800',
+                    'https://jaredwhipplellc-765105907.imgix.net/segway/sx10-wp-right-angle.png?auto=format&fit=clip&w=600'
+                ],
+                features: [
+                    '850cc EFI Engine',
+                    '80 HP @ 7200 RPM',
+                    'Sport-Tuned Suspension',
+                    'On-Demand 4WD',
+                    '1800 lb Towing Capacity',
+                    'Aggressive Styling',
+                    'Performance Exhaust',
+                    'Sport Seating'
+                ],
+                specs: {
+                    'Engine': '850cc EFI, 4-Stroke',
+                    'Horsepower': '80 HP @ 7200 RPM',
+                    'Transmission': 'Automatic CVT with High/Low/Reverse',
+                    'Drive System': '2WD/4WD with Locking Differential',
+                    'Suspension': 'Independent, 11" Travel',
+                    'Ground Clearance': '13 inches',
+                    'Payload Capacity': '900 lbs',
+                    'Towing Capacity': '1800 lbs',
+                    'Fuel Capacity': '9.2 gallons',
+                    'Wheelbase': '86 inches',
+                    'Overall Dimensions': '122" L x 65" W x 75" H',
+                    'Dry Weight': '1450 lbs'
+                },
+                colors: [
+                    { name: 'Black', value: '#000000' },
+                    { name: 'Red', value: '#DA291C' },
+                    { name: 'Metallic Gray', value: '#8C8C8C' }
+                ]
+            }
+        };
+
+        // Parse URL and render appropriate content
+        function loadPageContent() {
+            const pathParts = window.location.pathname.split('/').filter(part => part);
+            
+            // Check if we're viewing a specific model
+            if (pathParts.length === 2 && pathParts[0] === 'side-by-side') {
+                const modelId = pathParts[1];
+                const model = sideBySideModels[modelId];
+                
+                if (model) {
+                    renderModelPage(model);
+                } else {
+                    render404();
+                }
+            } else {
+                // Default to overview page
+                renderOverviewPage();
+            }
+        }
+
+        // Render model overview page
+        function renderOverviewPage() {
+            document.getElementById('page-title').textContent = 'Side-by-Side Vehicles - Gilbert Power Sports';
+            document.getElementById('main-content').innerHTML = `
+                <!-- Hero Section -->
+                <div class="bg-gray-900 text-white py-20">
+                    <div class="container mx-auto px-4">
+                        <h1 class="text-4xl md:text-6xl font-bold mb-4">Segway Side-by-Sides</h1>
+                        <p class="text-xl md:text-2xl text-gray-300 max-w-3xl">
+                            Experience the perfect blend of power, performance, and precision for all your off-road adventures.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Model Grid -->
+                <section class="py-16 bg-white">
+                    <div class="container mx-auto px-4">
+                        <h2 class="text-3xl font-bold text-center mb-12">Choose Your Model</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                            ${Object.values(sideBySideModels).map(model => `
+                                <a href="/side-by-side/${model.id}" 
+                                   class="group block overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                                   onclick="navigateToModel('${model.id}', event)">
+                                    <div class="relative h-64 bg-gray-100">
+                                        <img src="${model.images[0]}" 
+                                             alt="${model.name}" 
+                                             class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                                            <h3 class="text-2xl font-bold text-white">${model.name}</h3>
+                                            <p class="text-gray-200">${model.price}</p>
+                                        </div>
+                                    </div>
+                                    <div class="p-6">
+                                        <p class="text-gray-600 mb-4">${model.description}</p>
+                                        <ul class="space-y-2">
+                                            ${model.features.slice(0, 3).map(feature => `
+                                                <li class="flex items-center">
+                                                    <svg class="w-5 h-5 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                    </svg>
+                                                    ${feature}
+                                                </li>
+                                            `).join('')}
+                                        </ul>
+                                        <div class="mt-6">
+                                            <span class="inline-block bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-700 transition-colors">
+                                                View Details
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            `).join('')}
+                        </div>
+                    </div>
+                </section>
+            `;
+        }
+
+        // Render individual model page
+        function renderModelPage(model) {
+            document.getElementById('page-title').textContent = `${model.name} - Gilbert Power Sports`;
+            document.getElementById('main-content').innerHTML = `
+                <!-- Breadcrumb -->
+                <div class="bg-gray-50 py-8">
+                    <div class="container mx-auto px-4">
+                        <nav class="flex" aria-label="Breadcrumb">
+                            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                                <li class="inline-flex items-center">
+                                    <a href="/" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-red-600">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="flex items-center">
+                                        <svg class="w-3 h-3 text-gray-400 mx-1" fill="none" viewBox="0 0 6 10">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                        </svg>
+                                        <a href="/side-by-side" onclick="navigateToOverview(event)" class="ml-1 text-sm font-medium text-gray-700 hover:text-red-600 md:ml-2">
+                                            Side-by-Sides
+                                        </a>
+                                    </div>
+                                </li>
+                                <li aria-current="page">
+                                    <div class="flex items-center">
+                                        <svg class="w-3 h-3 text-gray-400 mx-1" fill="none" viewBox="0 0 6 10">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                        </svg>
+                                        <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2">${model.name}</span>
+                                    </div>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Product Gallery -->
+                <section class="py-12">
+                    <div class="container mx-auto px-4">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div class="space-y-4">
+                                <div class="relative h-96 bg-gray-100 rounded-lg overflow-hidden">
+                                    <img id="main-image" src="${model.images[0]}" alt="${model.name}" class="w-full h-full object-cover">
+                                </div>
+                                <div class="grid grid-cols-3 gap-4">
+                                    ${model.images.map((image, index) => `
+                                        <div class="relative h-24 bg-gray-100 rounded-md overflow-hidden cursor-pointer" onclick="changeMainImage('${image}')">
+                                            <img src="${image}" alt="${model.name} view ${index + 1}" class="w-full h-full object-cover">
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-6">
+                                <h1 class="text-4xl font-bold text-gray-900">${model.name}</h1>
+                                <p class="text-2xl font-semibold text-red-600">${model.price}</p>
+                                
+                                <div class="pt-4 border-t border-gray-200">
+                                    <h2 class="text-lg font-medium text-gray-900">Available Colors</h2>
+                                    <div class="mt-3 flex space-x-2">
+                                        ${model.colors.map(color => `
+                                            <button class="w-8 h-8 rounded-full border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                                                    style="background-color: ${color.value}"
+                                                    title="${color.name}">
+                                                <span class="sr-only">${color.name}</span>
+                                            </button>
+                                        `).join('')}
+                                    </div>
+                                </div>
+                                
+                                <div class="pt-4 border-t border-gray-200">
+                                    <h2 class="text-lg font-medium text-gray-900">Key Features</h2>
+                                    <ul class="mt-3 space-y-2">
+                                        ${model.features.map(feature => `
+                                            <li class="flex items-start">
+                                                <svg class="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <span class="text-gray-700">${feature}</span>
+                                            </li>
+                                        `).join('')}
+                                    </ul>
+                                </div>
+                                
+                                <div class="pt-4">
+                                    <button class="w-full bg-red-600 text-white py-3 px-6 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors"
+                                            onclick="window.location.href='contact.html'">
+                                        Schedule a Test Drive
+                                    </button>
+                                    <p class="mt-2 text-center text-sm text-gray-500">
+                                        Or call us at (123) 456-7890
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Specifications -->
+                <section class="bg-gray-50 py-16">
+                    <div class="container mx-auto px-4">
+                        <h2 class="text-3xl font-bold text-center mb-12">Specifications</h2>
+                        <div class="bg-white rounded-lg shadow overflow-hidden">
+                            <table class="min-w-full divide-y divide-gray-200">
+                                <tbody class="divide-y divide-gray-200">
+                                    ${Object.entries(model.specs).map(([key, value]) => `
+                                        <tr class="hover:bg-gray-50">
+                                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                                                ${key}
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                                ${value}
+                                            </td>
+                                        </tr>
+                                    `).join('')}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Call to Action -->
+                <section class="bg-red-600 text-white py-16">
+                    <div class="container mx-auto px-4 text-center">
+                        <h2 class="text-3xl font-bold mb-4">Ready to experience the ${model.name}?</h2>
+                        <p class="text-xl mb-8 max-w-2xl mx-auto">
+                            Contact us today to schedule a test drive or learn more about our financing options.
+                        </p>
+                        <div class="flex flex-col sm:flex-row justify-center gap-4">
+                            <button onclick="window.location.href='contact.html'" 
+                                    class="bg-white text-red-600 font-semibold py-3 px-8 rounded-md hover:bg-gray-100 transition-colors">
+                                Contact Us
+                            </button>
+                            <button class="bg-transparent border-2 border-white text-white font-semibold py-3 px-8 rounded-md hover:bg-white/10 transition-colors">
+                                View Financing Options
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            `;
+        }
+
+        // Render 404 page
+        function render404() {
+            document.getElementById('page-title').textContent = 'Model Not Found - Gilbert Power Sports';
+            document.getElementById('main-content').innerHTML = `
+                <div class="py-20 text-center">
+                    <h1 class="text-4xl font-bold text-gray-900 mb-4">Model Not Found</h1>
+                    <p class="text-gray-600 mb-8">The model you're looking for doesn't exist.</p>
+                    <a href="/side-by-side" onclick="navigateToOverview(event)" 
+                       class="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition-colors">
+                        View All Models
+                    </a>
+                </div>
+            `;
+        }
+
+        // Navigation functions
+        function navigateToModel(modelId, event) {
+            event.preventDefault();
+            history.pushState({}, '', `/side-by-side/${modelId}`);
+            loadPageContent();
+        }
+
+        function navigateToOverview(event) {
+            event.preventDefault();
+            history.pushState({}, '', '/side-by-side');
+            loadPageContent();
+        }
+
+        function changeMainImage(imageSrc) {
+            document.getElementById('main-image').src = imageSrc;
+        }
+
+        // Handle browser back/forward buttons
+        window.addEventListener('popstate', loadPageContent);
+
+        // Initialize page when DOM loads
+        document.addEventListener('DOMContentLoaded', loadPageContent);
+    </script>
 </body>
 </html>
