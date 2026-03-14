@@ -1,0 +1,39 @@
+{
+  "model": "UT6",
+  "year": 2025,
+  "startingPrice": "$10,499",
+  "trims": [
+    { "id": "ut6s", "name": "UT6 S", "price": "$10,499.00" },
+    { "id": "ut6m", "name": "UT6 M", "price": "$11,499.00" },
+    { "id": "ut6p", "name": "UT6 P", "price": "$12,499.00" }
+  ],
+  "specs": [
+    { "label": "MSRP", "values": ["$10,499.00", "$11,499.00", "$12,499.00"] },
+    { "label": "Engine", "values": ["567cc 4-Stroke DOHC", "567cc 4-Stroke DOHC", "567cc 4-Stroke DOHC"] },
+    { "label": "Horsepower", "values": ["44 hp", "44 hp", "44 hp"] },
+    { "label": "Transmission", "values": ["Automatic CVT", "Automatic CVT", "Automatic CVT"] },
+    { "label": "Locking Differential", "values": ["Front & Rear", "Front & Rear", "Front & Rear"] },
+    { "label": "EPS", "values": ["Adjustable EPS", "Adjustable EPS", "Adjustable EPS"] },
+    { "label": "Dimensions (L x W x H)", "values": ["120\" x 64.5\" x 75.5\"", "120\" x 64.5\" x 75.5\"", "120\" x 64.5\" x 75.5\""] },
+    { "label": "Cargo Bed Dimensions", "values": ["54.5\" x 37.5\" x 12.2\"", "54.5\" x 37.5\" x 12.2\"", "54.5\" x 37.5\" x 12.2\""] },
+    { "label": "Wheelbase", "values": ["83.10\"", "83.10\"", "83.10\""] },
+    { "label": "Ground Clearance", "values": ["12.5\"", "12.5\"", "12.5\""] },
+    { "label": "Towing Capacity", "values": ["2,500 Lbs", "2,500 Lbs", "2,500 Lbs"] },
+    { "label": "Cargo Bed Capacity", "values": ["1000 Lbs (CA: 600 Lbs)", "1000 Lbs (CA: 600 Lbs)", "1000 Lbs (CA: 600 Lbs)"] },
+    { "label": "Payload Capacity", "values": ["1,328 Lbs", "1,328 Lbs", "1,328 Lbs"] },
+    { "label": "Front Suspension", "values": ["Dual A-Arm; 9\" Travel", "Dual A-Arm; 9\" Travel", "Dual A-Arm; 9\" Travel"] },
+    { "label": "Rear Suspension", "values": ["Dual A-Arm; 10.5\" Travel", "Dual A-Arm; 10.5\" Travel", "Dual A-Arm; 10.5\" Travel"] },
+    { "label": "Shocks", "values": ["Adjustable Hydraulic", "Adjustable Hydraulic", "Adjustable Hydraulic"] },
+    { "label": "Wheels", "values": ["Steel", "Aluminum", "Aluminum"] },
+    { "label": "Tires", "values": ["27\" Obor; 6-Ply", "27\" Obor; 6-Ply", "27\" Obor; 6-Ply"] },
+    { "label": "Brakes", "values": ["4-Wheel Hydraulic Disc", "4-Wheel Hydraulic Disc", "4-Wheel Hydraulic Disc"] },
+    { "label": "Doors", "values": ["Mesh Doors", "Mesh Doors", "Mesh Doors"] },
+    { "label": "Fuel Capacity", "values": ["11.3 Gal", "11.3 Gal", "11.3 Gal"] },
+    { "label": "Touchscreen", "values": ["Optional", "Optional", "10.4\" Touchscreen"] },
+    { "label": "Smart Moving APP", "values": ["Standard", "Standard", "Standard"] },
+    { "label": "Winch", "values": ["Optional", "4,500 lbs W/Wireless Remote", "4,500 lbs W/Wireless Remote"] },
+    { "label": "Person Capacity", "values": ["3", "3", "3"] },
+    { "label": "Colors", "values": ["Dark Green/Black, Black/Black", "Black/Black, Light Gray/Black, Tan/Black", "Black/Black, Light Gray/Black, Tan/Black"] },
+    { "label": "Warranty", "values": ["2-Year Consumer / 1-Year Commercial", "2-Year Consumer / 1-Year Commercial", "2-Year Consumer / 1-Year Commercial"] }
+  ]
+}

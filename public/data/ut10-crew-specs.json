@@ -1,0 +1,86 @@
+{
+  "model": "UT10 Crew",
+  "year": 2025,
+  "startingPrice": "$16,999",
+  "trims": [
+    { "id": "ut10s-crew", "name": "UT10 S Crew", "price": "$16,999.00" },
+    { "id": "ut10p-crew", "name": "UT10 P Crew", "price": "$18,999.00" }
+  ],
+  "categories": [
+    {
+      "name": "Engine & Drivetrain",
+      "specs": [
+        { "label": "MSRP", "values": ["$16,999.00", "$18,999.00"] },
+        { "label": "Colors", "values": ["Dark Green / Black, Black / Black", "Light Gray / Black, Tan / Black, White / Red, Black / Black, Innovation Gray / Black"] },
+        { "label": "Engine", "values": ["1000cc 4-Stroke Parallel-Twin Cylinder DOHC", "1000cc 4-Stroke Parallel-Twin Cylinder DOHC"] },
+        { "label": "Horsepower", "values": ["105 hp", "105 hp"] },
+        { "label": "Drive System Type", "values": ["2WD / 4WD / Turf Mode", "2WD / 4WD / Turf Mode"] },
+        { "label": "Fuel System", "values": ["Electronic Fuel Injection", "Electronic Fuel Injection"] },
+        { "label": "Transmission", "values": ["Automatic CVT P/R/N/H/L", "Automatic CVT P/R/N/H/L"] },
+        { "label": "Cooling", "values": ["Liquid", "Liquid"] }
+      ]
+    },
+    {
+      "name": "Suspension",
+      "specs": [
+        { "label": "Shocks", "values": ["Adjustable Hydraulic", "Adjustable Hydraulic"] },
+        { "label": "Front Suspension", "values": ["Dual A-Arm; 10\" Wheel Travel", "Dual A-Arm; 10\" Wheel Travel"] },
+        { "label": "Rear Suspension", "values": ["Dual A-Arm; IRS 11\" Wheel Travel", "Dual A-Arm; IRS 11\" Wheel Travel"] }
+      ]
+    },
+    {
+      "name": "Wheels & Tires",
+      "specs": [
+        { "label": "Front Tires", "values": ["27 x 9-14", "30 x 10-14"] },
+        { "label": "Rear Tires", "values": ["27 x 11-14", "30 x 10-14"] },
+        { "label": "Tire Ply Rating", "values": ["8 Ply Rated", "8 Ply Rated"] },
+        { "label": "Wheels", "values": ["14\" Steel", "14\" Aluminum"] }
+      ]
+    },
+    {
+      "name": "Weight & Dimensions",
+      "specs": [
+        { "label": "Overall Vehicle Size (L x W x H)", "values": ["156.5\" x 64\" x 77.2\"", "156.5\" x 64\" x 77.2\""] },
+        { "label": "Wheelbase", "values": ["117.5\"", "117.5\""] },
+        { "label": "Ground Clearance", "values": ["13\"", "14\""] },
+        { "label": "Hitch Type", "values": ["Standard 2\" Receiver", "Standard 2\" Receiver"] },
+        { "label": "Cargo Bed (L x W x H)", "values": ["47\" x 34\" x 11.4\"", "47\" x 34\" x 11.4\""] },
+        { "label": "Cargo Bed Capacity", "values": ["722 lb", "722 lb"] },
+        { "label": "UVW", "values": ["2,050 lb", "2,050 lb"] },
+        { "label": "GVW", "values": ["3,153 lb", "3,153 lb"] },
+        { "label": "Payload Capacity", "values": ["1,500 lbs", "1,500 lbs"] },
+        { "label": "Person Capacity", "values": ["6", "6"] },
+        { "label": "Fuel Capacity", "values": ["12 Gal.", "12 Gal."] }
+      ]
+    },
+    {
+      "name": "Brakes",
+      "specs": [
+        { "label": "Front Brakes", "values": ["4-Wheel Hydraulic Disc", "4-Wheel Hydraulic Disc"] },
+        { "label": "Rear Brakes", "values": ["4-Wheel Hydraulic Disc", "4-Wheel Hydraulic Disc"] },
+        { "label": "Parking Brake", "values": ["Standard", "Standard"] }
+      ]
+    },
+    {
+      "name": "Additional Specifications",
+      "specs": [
+        { "label": "Adjustable Driver Seat", "values": ["Standard", "Standard"] },
+        { "label": "Power Steering", "values": ["Standard", "Standard"] },
+        { "label": "Touchscreen", "values": ["Optional", "Standard"] },
+        { "label": "Smart Moving APP", "values": ["Standard", "Standard"] },
+        { "label": "Tilt Steering", "values": ["Standard", "Standard"] },
+        { "label": "Roof", "values": ["Standard", "Standard"] },
+        { "label": "Doors", "values": ["Net Doors", "Steel Doors"] },
+        { "label": "Winch", "values": ["Optional", "4,500 lbs."] },
+        { "label": "Warranty", "values": ["2-Year Consumer / 1-Year Commercial", "2-Year Consumer / 1-Year Commercial"] },
+        { "label": "Extended Service (Optional)", "values": ["24, 36, 48, 60 Months", "24, 36, 48, 60 Months"] }
+      ]
+    }
+  ],
+  "accessories": [
+    { "name": "Turn Signal Kit", "price": "$142.97" },
+    { "name": "Front Windshield", "price": "$538.97" },
+    { "name": "Rear Windshield", "price": "$328.87" },
+    { "name": "Full Upper Door Kit", "price": "$1,402.08" }
+  ]
+}

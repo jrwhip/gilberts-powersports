@@ -1,0 +1,19 @@
+{
+  "name": "gilberts-powersports",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gilbert's Powersports & Repair website",
+  "type": "module",
+  "scripts": {
+    "dev": "npx live-server public --port=3000",
+    "amplify": "npx ampx sandbox"
+  },
+  "dependencies": {
+    "@aws-amplify/backend": "^1.0.0",
+    "@aws-amplify/backend-cli": "^1.0.0",
+    "aws-amplify": "^6.0.0",
+    "aws-cdk-lib": "^2.0.0",
+    "constructs": "^10.0.0",
+    "typescript": "^5.0.0"
+  }
+}

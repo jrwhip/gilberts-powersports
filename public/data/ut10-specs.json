@@ -1,0 +1,91 @@
+{
+  "model": "UT10",
+  "year": 2025,
+  "startingPrice": "$14,499",
+  "trims": [
+    { "id": "ut10s", "name": "UT10 S", "price": "$14,499.00" },
+    { "id": "ut10p", "name": "UT10 P", "price": "$16,499.00" }
+  ],
+  "categories": [
+    {
+      "name": "Engine & Drivetrain",
+      "specs": [
+        { "label": "MSRP", "values": ["$14,499.00", "$16,499.00"] },
+        { "label": "Cooling", "values": ["Liquid", "Liquid"] },
+        { "label": "Cylinders Displacement", "values": ["1000cc", "1000cc"] },
+        { "label": "Drive System Type", "values": ["2WD / 4WD", "2WD / 4WD"] },
+        { "label": "Engine Type", "values": ["4-Stroke Parallel-Twin Cylinder DOHC", "4-Stroke Parallel-Twin Cylinder DOHC"] },
+        { "label": "Fuel System", "values": ["Electronic Fuel Injection", "Electronic Fuel Injection"] },
+        { "label": "Horsepower", "values": ["105 hp", "105 hp"] },
+        { "label": "Transmission", "values": ["Automatic CVT P/R/N/H/L", "Automatic CVT P/R/N/H/L"] }
+      ]
+    },
+    {
+      "name": "Weight & Dimensions",
+      "specs": [
+        { "label": "Bed Dimensions (L x W x H)", "values": ["47 x 34 x 11.4 in", "47 x 34 x 11.4 in"] },
+        { "label": "Box Capacity", "values": ["1,000 lb", "1,000 lb"] },
+        { "label": "UVW", "values": ["1,653 lb", "1,653 lb"] },
+        { "label": "Fuel Capacity", "values": ["12.6 gal", "12.6 gal"] },
+        { "label": "Ground Clearance", "values": ["14 in", "14 in"] },
+        { "label": "GVW", "values": ["3,153 lb", "3,153 lb"] },
+        { "label": "Hitch Towing Rating", "values": ["2,500 lb", "2,500 lb"] },
+        { "label": "Hitch Type", "values": ["Standard 2\" Receiver", "Standard 2\" Receiver"] },
+        { "label": "Overall Vehicle Size (L x W x H)", "values": ["122 x 64 x 79 in", "122 x 64 x 79 in"] },
+        { "label": "Payload Capacity", "values": ["1,500 lbs", "1,500 lbs"] },
+        { "label": "Person Capacity", "values": ["3", "3"] },
+        { "label": "Wheelbase", "values": ["82 in", "82 in"] }
+      ]
+    },
+    {
+      "name": "Brakes",
+      "specs": [
+        { "label": "Front/Rear Brakes", "values": ["4-Wheel Hydraulic Disc", "4-Wheel Hydraulic Disc"] },
+        { "label": "Parking Brake", "values": ["Standard", "Standard"] }
+      ]
+    },
+    {
+      "name": "Tires / Wheels",
+      "specs": [
+        { "label": "Front Tires", "values": ["27 x 9-14", "27 x 9-14"] },
+        { "label": "Rear Tires", "values": ["27 x 11-14", "27 x 11-14"] },
+        { "label": "Tire Ply Rating", "values": ["6 Ply Rated", "6 Ply Rated"] },
+        { "label": "Wheels", "values": ["14\" Steel", "14\" Aluminum"] }
+      ]
+    },
+    {
+      "name": "Suspension",
+      "specs": [
+        { "label": "Shocks", "values": ["Adjustable Hydraulic", "Adjustable Hydraulic"] },
+        { "label": "Front Suspension", "values": ["Dual A-Arm 9.5 in Travel", "Dual A-Arm 9.5 in Travel"] },
+        { "label": "Rear Suspension", "values": ["Dual A-Arm, IRS 11 in Travel", "Dual A-Arm, IRS 11 in Travel"] },
+        { "label": "Turning Radius", "values": ["13.5 ft.", "13.5 ft."] }
+      ]
+    },
+    {
+      "name": "Additional Specifications",
+      "specs": [
+        { "label": "Adjustable Driver Seat", "values": ["Standard", "Standard"] },
+        { "label": "Cargo System", "values": ["Segway Secure", "Segway Secure"] },
+        { "label": "Electronic Power Steering", "values": ["Standard", "Standard"] },
+        { "label": "Lighting", "values": ["Dual Headlamps, 1250 lm Low / 2300 lm High", "Dual Headlamps, 1250 lm Low / 2300 lm High"] },
+        { "label": "Turn Signals", "values": ["Optional", "Optional"] },
+        { "label": "Touchscreen", "values": ["Optional", "Standard"] },
+        { "label": "Smart Moving APP", "values": ["Standard", "Standard"] },
+        { "label": "Tilt Steering", "values": ["Standard", "Standard"] },
+        { "label": "Roof", "values": ["Standard", "Standard"] },
+        { "label": "Doors", "values": ["Mesh", "Standard"] },
+        { "label": "Safety Restraint", "values": ["3 point", "3 point"] },
+        { "label": "Winch", "values": ["Optional", "4,500 lbs."] },
+        { "label": "Colors", "values": ["Dark Green / Black, Black / Black", "Light Gray / Black, Tan / Black, White / Red, Black / Black"] },
+        { "label": "Warranty", "values": ["2-Year Consumer / 1-Year Commercial", "2-Year Consumer / 1-Year Commercial"] }
+      ]
+    }
+  ],
+  "accessories": [
+    { "name": "Side Mirror Set", "price": "$49.47" },
+    { "name": "Front Windshield", "price": "$494.53" },
+    { "name": "Rear Windshield", "price": "$318.89" },
+    { "name": "Turn Signal Kit", "price": "$142.97" }
+  ]
+}

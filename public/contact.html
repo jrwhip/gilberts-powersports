@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Gilbert's Powersports & Repair</title>
+  <meta name="description" content="Get in touch with Gilbert's Powersports & Repair in Utah. Request a service estimate, ask about vehicles, or schedule a visit.">
+  <link rel="icon" href="img/favicon_io/favicon.ico">
+  <link rel="canonical" href="/contact.html">
+
+  <meta property="og:title" content="Contact Us — Gilbert's Powersports & Repair">
+  <meta property="og:description" content="Get in touch with Gilbert's Powersports & Repair in Utah.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/contact.html">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <div id="site-header"></div>
+
+  <main>
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="section-tag">Get in Touch</div>
+        <h1 class="section-title">Contact Us</h1>
+        <p class="section-subtitle">Have a question about a vehicle, need a service estimate, or just want to talk shop? We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT FORM + INFO ===== -->
+    <section class="features" style="padding-top: 0;">
+      <div class="container">
+        <div class="contact-layout">
+
+          <div class="contact-form-wrap reveal">
+            <div id="formMessage" class="form-message"></div>
+            <form id="contactForm" action="#" method="POST">
+              <label for="contactName">Name</label>
+              <input type="text" id="contactName" name="name" required placeholder="Your name">
+
+              <label for="contactEmail">Email</label>
+              <input type="email" id="contactEmail" name="email" required placeholder="your@email.com">
+
+              <label for="contactPhone">Phone</label>
+              <input type="tel" id="contactPhone" name="phone" placeholder="(555) 123-4567">
+
+              <label for="contactSubject">Subject</label>
+              <select id="contactSubject" name="subject" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="General">General Inquiry</option>
+                <option value="Service Request">Service Request</option>
+                <option value="UTV Inquiry">UTV Inquiry</option>
+                <option value="McCormick Inquiry">McCormick Inquiry</option>
+              </select>
+
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" required placeholder="How can we help?"></textarea>
+
+              <button type="submit" id="submitBtn">Send Message</button>
+            </form>
+          </div>
+
+          <div class="contact-info reveal delay-2">
+            <h3>Gilbert's Powersports & Repair</h3>
+
+            <div class="contact-info-item">
+              <h4>Address</h4>
+              <p>Utah</p>
+            </div>
+
+            <div class="contact-info-item">
+              <h4>Phone</h4>
+              <p><a href="tel:">Call us</a></p>
+            </div>
+
+            <div class="contact-info-item">
+              <h4>Hours</h4>
+              <p>
+                Monday &ndash; Friday: By appointment<br>
+                Saturday: By appointment<br>
+                Sunday: Closed
+              </p>
+            </div>
+
+            <div class="contact-info-item">
+              <h4>What We Do</h4>
+              <p>Segway UTVs, McCormick tractors, automotive repair, small engine repair, ATV/UTV service, tractor maintenance, parts and accessories.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/contact-form.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+{
+  "model": "Villain SX10",
+  "year": 2025,
+  "startingPrice": "$16,499",
+  "trims": [
+    { "id": "sx10s", "name": "Villain SX10 S (64\")", "price": "$16,499.00" },
+    { "id": "sx10p", "name": "Villain SX10 P (64\")", "price": "$19,499.00" },
+    { "id": "sx10wp", "name": "Villain SX10 WP (72\")", "price": "$19,999.00" }
+  ],
+  "categories": [
+    {
+      "name": "Engine & Drivetrain",
+      "specs": [
+        { "label": "MSRP", "values": ["$16,499.00", "$19,499.00", "$19,999.00"] },
+        { "label": "Engine", "values": ["1000cc 4-Stroke Parallel-Twin Cylinder DOHC", "1000cc 4-Stroke Parallel-Twin Cylinder DOHC", "1000cc 4-Stroke Parallel-Twin Cylinder DOHC"] },
+        { "label": "Horsepower", "values": ["105 hp", "105 hp", "105 hp"] },
+        { "label": "Drive System", "values": ["2WD / 4WD", "2WD / 4WD", "2WD / 4WD"] },
+        { "label": "Fuel System", "values": ["Electronic Fuel Injection", "Electronic Fuel Injection", "Electronic Fuel Injection"] },
+        { "label": "Transmission", "values": ["Automatic CVT - P/R/N/H/L", "Automatic CVT - P/R/N/H/L", "Automatic CVT - P/R/N/H/L"] },
+        { "label": "Cooling", "values": ["Liquid", "Liquid", "Liquid"] }
+      ]
+    },
+    {
+      "name": "Suspension",
+      "specs": [
+        { "label": "Shocks", "values": ["Remote Reservoir Gas", "Remote Reservoir Gas", "Remote Reservoir Gas"] },
+        { "label": "Front Suspension", "values": ["Dual A-Arm W/ Stabilizer Bar, 14\" Travel", "Dual A-Arm W/ Stabilizer Bar, 14\" Travel", "Dual A-Arm W/ Stabilizer Bar, 16\" Travel"] },
+        { "label": "Rear Suspension", "values": ["Multi-Link Trailing Arm W/ Stabilizer Bar, 17\" Travel", "Multi-Link Trailing Arm W/ Stabilizer Bar, 17\" Travel", "Multi-Link Trailing Arm W/ Stabilizer Bar, 18\" Travel"] }
+      ]
+    },
+    {
+      "name": "Wheels & Tires",
+      "specs": [
+        { "label": "Front Tires", "values": ["29 x 9-14; CST Stag", "29 x 9-14; CST Stag", "30 x 10-14; CST Stag"] },
+        { "label": "Rear Tires", "values": ["29 x 11-14; CST Stag", "29 x 11-14; CST Stag", "30 x 10-14; CST Stag"] },
+        { "label": "Tire Ply Rating", "values": ["8 Ply Rated", "8 Ply Rated", "8 Ply Rated"] },
+        { "label": "Wheels", "values": ["14\" Aluminum", "14\" Aluminum w/ Bead Lock", "14\" Aluminum w/ Bead Lock"] }
+      ]
+    },
+    {
+      "name": "Weight & Dimensions",
+      "specs": [
+        { "label": "Overall (L x W x H)", "values": ["133\" x 64\" x 71\"", "133\" x 64\" x 71\"", "133\" x 72\" x 73\""] },
+        { "label": "Wheelbase", "values": ["102\"", "102\"", "102\""] },
+        { "label": "Ground Clearance", "values": ["14\"", "14\"", "15\""] },
+        { "label": "Hitch Type", "values": ["Optional", "Optional", "Optional"] },
+        { "label": "Cargo Bed (L x W x H)", "values": ["24\" x 32\" x 12\"", "24\" x 32\" x 12\"", "24\" x 32\" x 12\""] },
+        { "label": "Cargo Bed Capacity", "values": ["200 LB", "200 LB", "200 LB"] },
+        { "label": "UVW", "values": ["1,896 LB", "1,896 LB", "1,940 LB"] },
+        { "label": "GVW", "values": ["2,868 LB", "2,868 LB", "2,868 LB"] },
+        { "label": "Payload Capacity", "values": ["573 LB", "573 LB", "573 LB"] },
+        { "label": "Person Capacity", "values": ["2", "2", "2"] },
+        { "label": "Fuel Capacity", "values": ["10.6 Gal.", "10.6 Gal.", "10.6 Gal."] }
+      ]
+    },
+    {
+      "name": "Additional Specifications",
+      "specs": [
+        { "label": "Adjustable Driver Seat", "values": ["Standard", "Standard", "Standard"] },
+        { "label": "EPS", "values": ["Standard", "Standard", "Standard"] },
+        { "label": "Touchscreen", "values": ["Optional", "Standard", "Standard"] },
+        { "label": "Smart Moving APP", "values": ["Standard", "Standard", "Standard"] },
+        { "label": "Tilt Steering", "values": ["Standard", "Standard", "Standard"] },
+        { "label": "Roof", "values": ["Standard", "Standard", "Standard"] },
+        { "label": "Doors", "values": ["Standard", "Standard", "Standard"] },
+        { "label": "Winch", "values": ["Optional", "4,500 lbs.", "4,500 lbs."] },
+        { "label": "Warranty", "values": ["2-Year Consumer / 1-Year Commercial", "2-Year Consumer / 1-Year Commercial", "2-Year Consumer / 1-Year Commercial"] },
+        { "label": "Extended Service (Optional)", "values": ["24, 36, 48, 60 Months", "24, 36, 48, 60 Months", "24, 36, 48, 60 Months"] }
+      ]
+    }
+  ],
+  "accessories": [
+    { "name": "Half Door Assembly", "price": "$274.97" },
+    { "name": "Turn Signal Kit", "price": "$153.97" },
+    { "name": "Front Windshield", "price": "$505.97" },
+    { "name": "Spare Tire Mount", "price": "$252.65" }
+  ]
+}

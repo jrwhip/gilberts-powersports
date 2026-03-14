@@ -66,3 +66,7 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# Amplify
+amplify_outputs.json
+.amplify/
