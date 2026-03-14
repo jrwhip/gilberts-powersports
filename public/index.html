@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gilbert's Powersports — Conquer Every Trail</title>
+  <meta name="description" content="Utah's premier Segway and powersports dealer. Side-by-sides, ATVs, parts, service, and the ride of your life.">
+  <link rel="icon" href="img/favicon_io/favicon.ico">
+
+  <style>
+    /* ========================================
+       FONTS
+       ======================================== */
+    @font-face {
+      font-family: 'Geomgraphic';
+      src: url('fonts/Fontspring-DEMO-geomgraphic_bold_italic.otf') format('opentype');
+      font-weight: 700;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Geomgraphic';
+      src: url('fonts/Fontspring-DEMO-geomgraphic_semibold_italic.otf') format('opentype');
+      font-weight: 600;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Geomgraphic';
+      src: url('fonts/Fontspring-DEMO-geomgraphic_bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Geomgraphic';
+      src: url('fonts/Fontspring-DEMO-geomgraphic_semibold.otf') format('opentype');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Geomgraphic';
+      src: url('fonts/Fontspring-DEMO-geomgraphic_regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Geomgraphic';
+      src: url('fonts/Fontspring-DEMO-geomgraphic_regular_italic.otf') format('opentype');
+      font-weight: 400;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Geomgraphic';
+      src: url('fonts/Fontspring-DEMO-geomgraphic_light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'DIN2014';
+      src: url('fonts/DIN2014-Regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'DIN2014';
+      src: url('fonts/DIN2014-Bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'DIN2014';
+      src: url('fonts/DIN2014-Light.otf') format('opentype');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* ========================================
+       RESET & BASE
+       ======================================== */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: 'DIN2014', 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 400;
+      background: #0a0a0a;
+      color: #e0e0e0;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img, video {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ========================================
+       UTILITY
+       ======================================== */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .display-font {
+      font-family: 'Geomgraphic', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Stagger delays */
+    .delay-1 { transition-delay: 0.1s; }
+    .delay-2 { transition-delay: 0.2s; }
+    .delay-3 { transition-delay: 0.3s; }
+    .delay-4 { transition-delay: 0.4s; }
+
+    /* ========================================
+       GRAIN OVERLAY
+       ======================================== */
+    body::after {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* ========================================
+       HEADER
+       ======================================== */
+    .site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 20px 0;
+      transition: background 0.4s ease, padding 0.4s ease, backdrop-filter 0.4s ease;
+    }
+
+    .site-header.scrolled {
+      background: rgba(10, 10, 10, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding: 12px 0;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      height: 48px;
+      width: auto;
+      transition: height 0.4s ease;
+    }
+
+    .site-header.scrolled .logo {
+      height: 36px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.7);
+      transition: color 0.3s ease;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #DA0012;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #fff;
+      background: #DA0012;
+      border: none;
+      padding: 10px 24px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+      display: inline-block;
+    }
+
+    .nav-cta:hover {
+      background: #ff1a2e;
+      transform: translateY(-1px);
+    }
+
+    /* Mobile menu toggle */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      z-index: 1001;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #fff;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .menu-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-toggle.active span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: flex;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 0; right: 0;
+        width: 280px;
+        height: 100vh;
+        background: rgba(10, 10, 10, 0.97);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+        transform: translateX(100%);
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        padding: 0 40px;
+      }
+
+      .nav-links.open {
+        transform: translateX(0);
+      }
+
+      .nav-links a {
+        font-size: 18px;
+        letter-spacing: 2px;
+      }
+    }
+
+    /* ========================================
+       HERO
+       ======================================== */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      min-height: 600px;
+      overflow: hidden;
+    }
+
+    .hero-slide {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1.5s ease;
+    }
+
+    .hero-slide.active {
+      opacity: 1;
+    }
+
+    .hero-slide video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .hero-slide .slide-zoom {
+      width: 100%;
+      height: 100%;
+      animation: kenBurns 12s ease-in-out infinite alternate;
+    }
+
+    @keyframes kenBurns {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.08); }
+    }
+
+    /* Gradient overlays */
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 100%; height: 60%;
+      background: linear-gradient(to top, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.4) 50%, transparent 100%);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 30%;
+      background: linear-gradient(to bottom, rgba(10,10,10,0.6) 0%, transparent 100%);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .hero-content {
+      position: absolute;
+      bottom: 15%;
+      left: 0;
+      width: 100%;
+      z-index: 3;
+      padding: 0 24px;
+    }
+
+    .hero-content .container {
+      max-width: 1200px;
+    }
+
+    .hero-tag {
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #DA0012;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hero-tag::before {
+      content: '';
+      display: inline-block;
+      width: 40px;
+      height: 2px;
+      background: #DA0012;
+    }
+
+    .hero-title {
+      font-family: 'Geomgraphic', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      line-height: 1.05;
+      color: #fff;
+      margin-bottom: 16px;
+      max-width: 700px;
+      text-shadow: 0 2px 40px rgba(0,0,0,0.5);
+    }
+
+    .hero-subtitle {
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 300;
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      color: rgba(255, 255, 255, 0.7);
+      max-width: 500px;
+      margin-bottom: 32px;
+    }
+
+    .hero-btn {
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #fff;
+      background: transparent;
+      border: 2px solid #fff;
+      padding: 14px 32px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .hero-btn:hover {
+      background: #DA0012;
+      border-color: #DA0012;
+    }
+
+    /* Hero navigation */
+    .hero-nav {
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .hero-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.5);
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      padding: 0;
+    }
+
+    .hero-dot.active {
+      background: #fff;
+      border-color: #fff;
+      transform: scale(1.2);
+    }
+
+    .hero-dot:hover {
+      border-color: #fff;
+    }
+
+    /* Hero arrows */
+    .hero-arrows {
+      position: absolute;
+      right: 32px;
+      bottom: 40px;
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .hero-arrow {
+      width: 44px;
+      height: 44px;
+      border: 2px solid rgba(255,255,255,0.4);
+      border-radius: 50%;
+      background: transparent;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      padding: 0;
+    }
+
+    .hero-arrow:hover {
+      border-color: #fff;
+      background: rgba(255,255,255,0.1);
+    }
+
+    .hero-arrow svg {
+      width: 16px;
+      height: 16px;
+      stroke: #fff;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    @media (max-width: 768px) {
+      .hero-nav, .hero-arrows {
+        display: none;
+      }
+    }
+
+    /* ========================================
+       SECTION TITLES
+       ======================================== */
+    .section-tag {
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #DA0012;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-tag::before {
+      content: '';
+      display: inline-block;
+      width: 40px;
+      height: 2px;
+      background: #DA0012;
+    }
+
+    .section-title {
+      font-family: 'Geomgraphic', sans-serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .section-subtitle {
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 300;
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.6);
+      max-width: 600px;
+      line-height: 1.7;
+    }
+
+    /* ========================================
+       FEATURES / VEHICLES
+       ======================================== */
+    .features {
+      padding: 120px 0;
+      background: #0a0a0a;
+      position: relative;
+    }
+
+    .features::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 80px;
+      background: linear-gradient(to bottom, #DA0012, transparent);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2px;
+      margin-top: 64px;
+    }
+
+    .feature-card {
+      background: #111;
+      padding: 48px 36px;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.4s ease;
+    }
+
+    .feature-card:hover {
+      background: #161616;
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 3px;
+      height: 0;
+      background: #DA0012;
+      transition: height 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .feature-card:hover::before {
+      height: 100%;
+    }
+
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 24px;
+      color: #DA0012;
+    }
+
+    .feature-card h3 {
+      font-family: 'Geomgraphic', sans-serif;
+      font-weight: 600;
+      font-size: 1.25rem;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .feature-card p {
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 300;
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.7;
+    }
+
+    .feature-card .feature-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 24px;
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #DA0012;
+      transition: gap 0.3s ease;
+    }
+
+    .feature-card:hover .feature-link {
+      gap: 14px;
+    }
+
+    .feature-link svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+    }
+
+    /* ========================================
+       CTA SECTION
+       ======================================== */
+    .cta-section {
+      position: relative;
+      padding: 160px 0;
+      overflow: hidden;
+      background: #0f0f0f;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(218,0,18,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 50%, rgba(218,0,18,0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .cta-inner {
+      text-align: center;
+      position: relative;
+    }
+
+    .cta-inner .section-tag {
+      justify-content: center;
+    }
+
+    .cta-inner .section-tag::before {
+      display: none;
+    }
+
+    .cta-inner .section-title {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      max-width: 700px;
+      margin: 0 auto 16px;
+    }
+
+    .cta-inner .section-subtitle {
+      max-width: 500px;
+      margin: 0 auto 40px;
+    }
+
+    .cta-btn {
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #fff;
+      background: #DA0012;
+      border: none;
+      padding: 16px 48px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .cta-btn:hover {
+      background: #ff1a2e;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(218,0,18,0.3);
+    }
+
+    /* Decorative lines */
+    .cta-section .deco-line {
+      position: absolute;
+      width: 1px;
+      height: 120px;
+      background: linear-gradient(to bottom, transparent, rgba(218,0,18,0.3), transparent);
+    }
+
+    .cta-section .deco-line:nth-child(1) {
+      top: 0; left: 20%;
+    }
+
+    .cta-section .deco-line:nth-child(2) {
+      bottom: 0; right: 25%;
+    }
+
+    /* ========================================
+       TESTIMONIALS
+       ======================================== */
+    .testimonials {
+      padding: 120px 0;
+      background: #0a0a0a;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-top: 64px;
+    }
+
+    .testimonial-card {
+      background: #111;
+      padding: 40px 32px;
+      position: relative;
+      border-left: 3px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      border-left-color: #DA0012;
+    }
+
+    .testimonial-quote {
+      font-size: 2.5rem;
+      color: rgba(218,0,18,0.2);
+      font-family: Georgia, serif;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .testimonial-card blockquote {
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 300;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .testimonial-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Geomgraphic', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: #DA0012;
+    }
+
+    .testimonial-name {
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+
+    .testimonial-vehicle {
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 300;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* ========================================
+       FAQ
+       ======================================== */
+    .faq-section {
+      padding: 120px 0;
+      background: #0f0f0f;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px 80px;
+      margin-top: 64px;
+    }
+
+    @media (max-width: 768px) {
+      .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding-bottom: 24px;
+    }
+
+    .faq-question {
+      font-family: 'Geomgraphic', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #fff;
+      margin-bottom: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .faq-question::before {
+      content: '+';
+      color: #DA0012;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.open .faq-question::before {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 300;
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.7;
+      padding-left: 28px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                  opacity 0.4s ease;
+      opacity: 0;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      opacity: 1;
+    }
+
+    /* ========================================
+       FOOTER
+       ======================================== */
+    .site-footer {
+      background: #060606;
+      padding: 80px 0 40px;
+      border-top: 1px solid rgba(255,255,255,0.04);
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .footer-brand {
+      max-width: 300px;
+    }
+
+    .footer-logo {
+      height: 40px;
+      margin-bottom: 16px;
+    }
+
+    .footer-brand p {
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 300;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.4);
+      line-height: 1.7;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 64px;
+    }
+
+    .footer-column h4 {
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+      margin-bottom: 20px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-column a {
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 400;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.5);
+      transition: color 0.3s ease;
+    }
+
+    .footer-column a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-copyright {
+      font-family: 'DIN2014', sans-serif;
+      font-weight: 300;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.3);
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 16px;
+    }
+
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.3s ease, background 0.3s ease;
+    }
+
+    .footer-social a:hover {
+      border-color: #DA0012;
+      background: rgba(218,0,18,0.1);
+    }
+
+    .footer-social svg {
+      width: 16px;
+      height: 16px;
+      fill: rgba(255,255,255,0.5);
+    }
+
+    .footer-social a:hover svg {
+      fill: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .footer-top {
+        flex-direction: column;
+      }
+      .footer-links {
+        flex-direction: column;
+        gap: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#" aria-label="Gilbert's Powersports Home">
+        <img src="img/gilbert-logo-white.svg" alt="Gilbert's Powersports" class="logo">
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#vehicles">Vehicles</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-slide active" data-index="0">
+        <div class="slide-zoom">
+          <video src="videos/kristi-site-hero.m4v" muted loop playsinline autoplay></video>
+        </div>
+      </div>
+      <div class="hero-slide" data-index="1">
+        <div class="slide-zoom">
+          <video src="videos/ut6-hero-1.m4v" muted loop playsinline></video>
+        </div>
+      </div>
+      <div class="hero-slide" data-index="2">
+        <div class="slide-zoom">
+          <video src="videos/super-villain-1.m4v" muted loop playsinline></video>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-tag" id="heroTag">Gilbert's Powersports</div>
+          <h1 class="hero-title" id="heroTitle">Conquer Every Trail</h1>
+          <p class="hero-subtitle" id="heroSubtitle">Utah's premier Segway powersports dealer. Built for those who refuse to stay on the pavement.</p>
+          <a href="#vehicles" class="hero-btn">Explore Vehicles</a>
+        </div>
+      </div>
+
+      <div class="hero-nav" id="heroNav">
+        <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+        <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+        <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="hero-arrows">
+        <button class="hero-arrow" id="heroPrev" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="hero-arrow" id="heroNext" aria-label="Next slide">
+          <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"></polyline></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== FEATURES / VEHICLES ===== -->
+    <section class="features" id="vehicles">
+      <div class="container">
+        <div class="reveal">
+          <div class="section-tag">What We Offer</div>
+          <h2 class="section-title">Built for the Dirt,<br>Ready for Anything</h2>
+          <p class="section-subtitle">From rugged side-by-sides to nimble ATVs, we carry the machines that turn weekends into adventures.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card reveal delay-1">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="6" y="28" width="36" height="12" rx="3"/>
+              <circle cx="14" cy="40" r="5"/><circle cx="34" cy="40" r="5"/>
+              <path d="M12 28l4-14h16l4 14"/>
+              <line x1="20" y1="14" x2="28" y2="14"/>
+            </svg>
+            <h3>Side-by-Sides</h3>
+            <p>Purpose-built UTVs from Segway that tear through trails with room for crew and cargo. Roll cages, power steering, and pure adrenaline.</p>
+            <a href="#" class="feature-link">
+              View lineup
+              <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+
+          <div class="feature-card reveal delay-2">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="36" r="6"/><circle cx="36" cy="36" r="6"/>
+              <path d="M18 36h12"/>
+              <path d="M24 10l-8 26"/>
+              <path d="M24 10l8 26"/>
+              <path d="M16 24h16"/>
+            </svg>
+            <h3>ATVs</h3>
+            <p>Nimble, powerful, and ready for anything. Our Segway ATV lineup handles desert dunes and mountain switchbacks with equal confidence.</p>
+            <a href="#" class="feature-link">
+              View lineup
+              <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+
+          <div class="feature-card reveal delay-3">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 36h32"/>
+              <path d="M12 36V18l12-8 12 8v18"/>
+              <rect x="18" y="24" width="12" height="12"/>
+              <line x1="24" y1="24" x2="24" y2="36"/>
+              <line x1="18" y1="30" x2="30" y2="30"/>
+            </svg>
+            <h3>Parts & Accessories</h3>
+            <p>OEM parts, aftermarket upgrades, and everything in between. Winches, lighting, skid plates, and more to build your perfect rig.</p>
+            <a href="#" class="feature-link">
+              Browse parts
+              <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+
+          <div class="feature-card reveal delay-4">
+            <svg class="feature-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="24" cy="24" r="16"/>
+              <path d="M24 14v10l7 7"/>
+              <circle cx="24" cy="24" r="2"/>
+            </svg>
+            <h3>Service & Repair</h3>
+            <p>Factory-trained technicians, genuine parts, and fast turnarounds. We keep your machine trail-ready so you never miss a weekend.</p>
+            <a href="#" class="feature-link">
+              Schedule service
+              <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section">
+      <div class="deco-line"></div>
+      <div class="deco-line"></div>
+      <div class="container">
+        <div class="cta-inner reveal">
+          <div class="section-tag">Ready to Ride?</div>
+          <h2 class="section-title">Your Next Adventure<br>Starts Here</h2>
+          <p class="section-subtitle">Stop by the shop, take a test ride, and find the machine that fits your kind of dirt. No pressure, just horsepower.</p>
+          <a href="#contact" class="cta-btn">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="reveal">
+          <div class="section-tag">What Riders Say</div>
+          <h2 class="section-title">Don't Take Our Word for It</h2>
+          <p class="section-subtitle">Real customers, real trails, real opinions.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal delay-1">
+            <div class="testimonial-quote">&ldquo;</div>
+            <blockquote>Bought a Villain from Gilbert's last spring. These guys know their stuff and the after-sale support has been unreal. Every question answered, every concern handled.</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MR</div>
+              <div>
+                <div class="testimonial-name">Mike R.</div>
+                <div class="testimonial-vehicle">Segway Villain SX10</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal delay-2">
+            <div class="testimonial-quote">&ldquo;</div>
+            <blockquote>Third vehicle we've bought here. The service department is honest and fast. They had our UTV back on the trail in two days flat after we bent a control arm in Moab.</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">KT</div>
+              <div>
+                <div class="testimonial-name">Kristi T.</div>
+                <div class="testimonial-vehicle">Segway UT6 Crew</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal delay-3">
+            <div class="testimonial-quote">&ldquo;</div>
+            <blockquote>I was skeptical about Segway powersports at first, but Gilbert's let me take a Fugleman out for a real test ride, not just around the parking lot. Sold me on the spot.</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">DL</div>
+              <div>
+                <div class="testimonial-name">Dave L.</div>
+                <div class="testimonial-vehicle">Segway Fugleman UT10</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal delay-1">
+            <div class="testimonial-quote">&ldquo;</div>
+            <blockquote>Best dealership experience I've had. No games, fair pricing, and they actually ride these machines themselves. You can tell they care about the sport.</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SB</div>
+              <div>
+                <div class="testimonial-name">Sarah B.</div>
+                <div class="testimonial-vehicle">Segway Snarler AT6</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal delay-2">
+            <div class="testimonial-quote">&ldquo;</div>
+            <blockquote>The parts department hooked me up with everything I needed for a full skid plate and winch install. Had it all in stock. That never happens at other dealers.</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">JW</div>
+              <div>
+                <div class="testimonial-name">Jake W.</div>
+                <div class="testimonial-vehicle">Segway Villain SX10</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal delay-3">
+            <div class="testimonial-quote">&ldquo;</div>
+            <blockquote>Drove two hours to buy from Gilbert's instead of the dealer down the street. Worth every mile. These folks treat you like family, not a number.</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">RC</div>
+              <div>
+                <div class="testimonial-name">Ryan C.</div>
+                <div class="testimonial-vehicle">Segway Fugleman UT10</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="reveal">
+          <div class="section-tag">Common Questions</div>
+          <h2 class="section-title">Frequently Asked</h2>
+          <p class="section-subtitle">Everything you need to know before you ride.</p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item reveal delay-1">
+            <div class="faq-question" onclick="toggleFaq(this)">Do you offer financing?</div>
+            <div class="faq-answer">Yes. We work with several lenders to offer competitive rates on all new and used vehicles. Stop by or call us to get pre-approved. Approval is typically same-day.</div>
+          </div>
+
+          <div class="faq-item reveal delay-2">
+            <div class="faq-question" onclick="toggleFaq(this)">Can I schedule a test ride?</div>
+            <div class="faq-answer">Absolutely. We encourage test rides on every vehicle we carry. Give us a call or stop by during business hours and we'll get you behind the wheel on actual terrain, not just a parking lot.</div>
+          </div>
+
+          <div class="faq-item reveal delay-1">
+            <div class="faq-question" onclick="toggleFaq(this)">Do you accept trade-ins?</div>
+            <div class="faq-answer">We do. Bring your current machine in and we'll give you a fair market appraisal on the spot. We accept ATVs, UTVs, and motorcycles from all brands.</div>
+          </div>
+
+          <div class="faq-item reveal delay-2">
+            <div class="faq-question" onclick="toggleFaq(this)">What brands do you service?</div>
+            <div class="faq-answer">While we specialize in Segway Powersports, our technicians are experienced with most major brands. Contact our service department for specific questions about your machine.</div>
+          </div>
+
+          <div class="faq-item reveal delay-1">
+            <div class="faq-question" onclick="toggleFaq(this)">Where are you located?</div>
+            <div class="faq-answer">We're based in Utah and serve riders across the state and beyond. Check our contact section for the full address, hours, and directions.</div>
+          </div>
+
+          <div class="faq-item reveal delay-2">
+            <div class="faq-question" onclick="toggleFaq(this)">Do you ship vehicles?</div>
+            <div class="faq-answer">We can arrange shipping for customers outside our immediate area. Costs vary by distance. Reach out and we'll get you a quote along with an estimated delivery window.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="img/gilbert-logo-white.svg" alt="Gilbert's Powersports" class="footer-logo">
+          <p>Utah's premier Segway powersports dealer. Side-by-sides, ATVs, parts, and service for riders who demand more from their machines.</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Navigate</h4>
+            <ul>
+              <li><a href="#vehicles">Vehicles</a></li>
+              <li><a href="#testimonials">Reviews</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2025 Gilbert's Powersports. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#060606"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ========================================
+       HERO CAROUSEL
+       ======================================== */
+    (function() {
+      const slides = document.querySelectorAll('.hero-slide');
+      const dots = document.querySelectorAll('.hero-dot');
+      const prevBtn = document.getElementById('heroPrev');
+      const nextBtn = document.getElementById('heroNext');
+
+      const heroData = [
+        { tag: "Gilbert's Powersports", title: 'Conquer Every Trail', subtitle: "Utah's premier Segway powersports dealer. Built for those who refuse to stay on the pavement." },
+        { tag: 'Adventure Awaits', title: 'Unleash Your Wild Side', subtitle: 'Purpose-built machines for desert dunes, mountain passes, and everything in between.' },
+        { tag: 'Ride in Style', title: 'Power Meets Precision', subtitle: 'From the showroom floor to the trailhead. Discover what Segway powersports can do.' }
+      ];
+
+      let current = 0;
+      let interval;
+
+      function goTo(index) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+
+        // Pause old video
+        const oldVideo = slides[current].querySelector('video');
+        if (oldVideo) oldVideo.pause();
+
+        current = index;
+
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+
+        // Play new video
+        const newVideo = slides[current].querySelector('video');
+        if (newVideo) {
+          newVideo.currentTime = 0;
+          newVideo.play().catch(function() {});
+        }
+
+        // Update text
+        document.getElementById('heroTag').textContent = heroData[current].tag;
+        document.getElementById('heroTitle').textContent = heroData[current].title;
+        document.getElementById('heroSubtitle').textContent = heroData[current].subtitle;
+      }
+
+      function next() {
+        goTo((current + 1) % slides.length);
+      }
+
+      function prev() {
+        goTo((current - 1 + slides.length) % slides.length);
+      }
+
+      function startAutoplay() {
+        interval = setInterval(next, 6000);
+      }
+
+      function stopAutoplay() {
+        clearInterval(interval);
+      }
+
+      // Dot clicks
+      dots.forEach(function(dot) {
+        dot.addEventListener('click', function() {
+          stopAutoplay();
+          goTo(parseInt(this.dataset.slide));
+          startAutoplay();
+        });
+      });
+
+      // Arrow clicks
+      prevBtn.addEventListener('click', function() {
+        stopAutoplay();
+        prev();
+        startAutoplay();
+      });
+
+      nextBtn.addEventListener('click', function() {
+        stopAutoplay();
+        next();
+        startAutoplay();
+      });
+
+      // Pause on hover
+      var heroEl = document.getElementById('hero');
+      heroEl.addEventListener('mouseenter', stopAutoplay);
+      heroEl.addEventListener('mouseleave', startAutoplay);
+
+      startAutoplay();
+    })();
+
+    /* ========================================
+       HEADER SCROLL
+       ======================================== */
+    (function() {
+      var header = document.getElementById('siteHeader');
+      var scrolled = false;
+
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 60 && !scrolled) {
+          header.classList.add('scrolled');
+          scrolled = true;
+        } else if (window.scrollY <= 60 && scrolled) {
+          header.classList.remove('scrolled');
+          scrolled = false;
+        }
+      });
+    })();
+
+    /* ========================================
+       MOBILE MENU
+       ======================================== */
+    (function() {
+      var toggle = document.getElementById('menuToggle');
+      var nav = document.getElementById('navLinks');
+
+      toggle.addEventListener('click', function() {
+        toggle.classList.toggle('active');
+        nav.classList.toggle('open');
+      });
+
+      // Close menu on link click
+      nav.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          toggle.classList.remove('active');
+          nav.classList.remove('open');
+        });
+      });
+    })();
+
+    /* ========================================
+       SCROLL REVEAL
+       ======================================== */
+    (function() {
+      var reveals = document.querySelectorAll('.reveal');
+
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      reveals.forEach(function(el) {
+        observer.observe(el);
+      });
+    })();
+
+    /* ========================================
+       FAQ TOGGLE
+       ======================================== */
+    function toggleFaq(el) {
+      el.parentElement.classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
