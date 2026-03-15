@@ -16,10 +16,12 @@
     if (anchor.hasAttribute('download')) return false;
     if (anchor.href.indexOf('mailto:') === 0) return false;
     if (anchor.href.indexOf('tel:') === 0) return false;
-    if (anchor.href.indexOf('#') !== -1 && anchor.pathname === window.location.pathname) return false;
+    var rawHref = anchor.getAttribute('href');
+    if (!rawHref || rawHref === '#' || rawHref.charAt(0) === '#') return false;
 
     try {
       var url = new URL(anchor.href);
+      if (url.protocol !== 'http:' && url.protocol !== 'https:') return false;
       return url.origin === window.location.origin;
     } catch (e) {
       return false;
