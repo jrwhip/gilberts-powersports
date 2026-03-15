@@ -1,11 +1,12 @@
 /* ========================================
    CONTACT FORM HANDLER
-   Works as mailto: fallback without Amplify,
-   wired to Amplify DataStore when available.
+   Sends form submissions to Lambda + SES
    ======================================== */
 
 (function () {
   'use strict';
+
+  var CONTACT_URL = 'https://iwqj4dq2stas3rbnikkwqeft740jljqn.lambda-url.us-west-2.on.aws/';
 
   function initContactForm() {
     var form = document.getElementById('contactForm');
@@ -37,40 +38,33 @@
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending...';
 
-      // Check if Amplify is configured
-      if (window.AmplifyContactAPI && typeof window.AmplifyContactAPI.submit === 'function') {
-        window.AmplifyContactAPI.submit({
+      fetch(CONTACT_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
           name: name,
           email: email,
           phone: phone,
           subject: subject,
           message: message
-        }).then(function () {
-          showMessage('Message sent successfully! We\'ll get back to you soon.', 'success');
-          form.reset();
-        }).catch(function () {
+        })
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          if (data.success) {
+            showMessage('Message sent successfully! We\'ll get back to you soon.', 'success');
+            form.reset();
+          } else {
+            showMessage(data.error || 'Something went wrong. Please try again or call us directly.', 'error');
+          }
+        })
+        .catch(function () {
           showMessage('Something went wrong. Please try again or call us directly.', 'error');
-        }).finally(function () {
+        })
+        .finally(function () {
           submitBtn.disabled = false;
           submitBtn.textContent = 'Send Message';
         });
-      } else {
-        // Fallback: mailto link
-        var mailtoSubject = encodeURIComponent('[' + subject + '] Message from ' + name);
-        var mailtoBody = encodeURIComponent(
-          'Name: ' + name + '\n' +
-          'Email: ' + email + '\n' +
-          'Phone: ' + (phone || 'Not provided') + '\n' +
-          'Subject: ' + subject + '\n\n' +
-          message
-        );
-
-        window.location.href = 'mailto:?subject=' + mailtoSubject + '&body=' + mailtoBody;
-
-        showMessage('Your email client should open with the message. If it doesn\'t, please call us directly.', 'success');
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Send Message';
-      }
     });
 
     function showMessage(text, type) {
