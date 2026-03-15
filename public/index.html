@@ -45,17 +45,17 @@
     <section class="hero" id="hero">
       <div class="hero-slide active" data-index="0">
         <div class="slide-zoom">
-          <video src="videos/kristi-site-hero.m4v" muted loop playsinline autoplay></video>
+          <video src="videos/kristi-site-hero.m4v" muted playsinline autoplay></video>
         </div>
       </div>
       <div class="hero-slide" data-index="1">
         <div class="slide-zoom">
-          <video src="videos/ut6-hero-1.m4v" muted loop playsinline></video>
+          <video src="videos/ut6-hero-1.m4v" muted playsinline></video>
         </div>
       </div>
       <div class="hero-slide" data-index="2">
         <div class="slide-zoom">
-          <video src="videos/super-villain-1.m4v" muted loop playsinline></video>
+          <video src="videos/super-villain-1.m4v" muted playsinline></video>
         </div>
       </div>
 
@@ -326,16 +326,37 @@
       ];
 
       var current = 0;
-      var interval;
+      var paused = false;
+
+      // When a video ends, advance to the next slide
+      slides.forEach(function(slide, i) {
+        var video = slide.querySelector('video');
+        if (video) {
+          video.addEventListener('ended', function() {
+            if (i === current && !paused) {
+              next();
+            }
+          });
+        }
+      });
 
       function goTo(index) {
+        if (index === current) return;
+
         slides[current].classList.remove('active');
         dots[current].classList.remove('active');
-
         var oldVideo = slides[current].querySelector('video');
         if (oldVideo) oldVideo.pause();
 
         current = index;
+
+        // Reset Ken Burns on incoming slide
+        var newZoom = slides[current].querySelector('.slide-zoom');
+        if (newZoom) {
+          newZoom.style.animation = 'none';
+          newZoom.offsetHeight;
+          newZoom.style.animation = '';
+        }
 
         slides[current].classList.add('active');
         dots[current].classList.add('active');
@@ -353,25 +374,28 @@
 
       function next() { goTo((current + 1) % slides.length); }
       function prev() { goTo((current - 1 + slides.length) % slides.length); }
-      function startAutoplay() { interval = setInterval(next, 6000); }
-      function stopAutoplay() { clearInterval(interval); }
 
       dots.forEach(function(dot) {
         dot.addEventListener('click', function() {
-          stopAutoplay();
           goTo(parseInt(this.dataset.slide));
-          startAutoplay();
         });
       });
 
-      prevBtn.addEventListener('click', function() { stopAutoplay(); prev(); startAutoplay(); });
-      nextBtn.addEventListener('click', function() { stopAutoplay(); next(); startAutoplay(); });
+      prevBtn.addEventListener('click', function() { prev(); });
+      nextBtn.addEventListener('click', function() { next(); });
 
-      var heroEl = document.getElementById('hero');
-      heroEl.addEventListener('mouseenter', stopAutoplay);
-      heroEl.addEventListener('mouseleave', startAutoplay);
+      ['.hero-btn', '.hero-nav', '.hero-arrows'].forEach(function(sel) {
+        var el = document.querySelector(sel);
+        if (el) {
+          el.addEventListener('mouseenter', function() { paused = true; });
+          el.addEventListener('mouseleave', function() {
+            paused = false;
+            var video = slides[current].querySelector('video');
+            if (video && video.ended) next();
+          });
+        }
+      });
 
-      startAutoplay();
     })();
   </script>
 
