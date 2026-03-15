@@ -55,7 +55,6 @@
                 '<li><a href="' + base + 'utv/villain-sx10.html">Segway Villain SX10</a></li>' +
               '</ul>' +
             '</li>' +
-            '<li><a href="' + base + 'mccormick.html"' + activeClass('/mccormick') + '>McCormick</a></li>' +
             '<li><a href="' + base + 'contact.html"' + navCtaClass('/contact') + '>Contact Us</a></li>' +
           '</ul>' +
         '</div>' +
@@ -87,7 +86,6 @@
                   '<li><a href="' + base + 'utv/ut10.html">Segway UT10</a></li>' +
                   '<li><a href="' + base + 'utv/ut10-crew.html">Segway UT10 Crew</a></li>' +
                   '<li><a href="' + base + 'utv/villain-sx10.html">Segway Villain SX10</a></li>' +
-                  '<li><a href="' + base + 'mccormick.html">McCormick Tractors</a></li>' +
                 '</ul>' +
               '</div>' +
               '<div class="footer-column">' +

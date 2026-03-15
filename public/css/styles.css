@@ -1222,53 +1222,6 @@ main.page-exit {
 }
 
 /* ========================================
-   McCORMICK PAGE
-   ======================================== */
-.mccormick-feature {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: center;
-  padding: 80px 0;
-}
-
-@media (max-width: 768px) {
-  .mccormick-feature {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-}
-
-.mccormick-feature img {
-  width: 100%;
-  border: 1px solid var(--color-border);
-}
-
-.mccormick-info h2 {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-style: italic;
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
-  color: #fff;
-  margin-bottom: 8px;
-}
-
-.mccormick-info .tagline {
-  font-weight: 300;
-  font-size: 1.2rem;
-  color: var(--color-text-muted);
-  margin-bottom: 16px;
-}
-
-.mccormick-info .pricing-note {
-  font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--color-red);
-}
-
-/* ========================================
    UTV LANDING PAGES
    ======================================== */
 .utv-hero {
