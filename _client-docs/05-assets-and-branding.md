@@ -43,16 +43,6 @@ Kristi suggested using stock images of parts to add visual interest to the servi
 
 ---
 
-## McCormick Reference Materials
-
-Kristi provided two McCormick resources in her March 17 email for use as source material for images and product info on the McCormick page:
-
-1. A 36-page McCormick X4 Series brochure PDF from mccormick.it — contains product photography, specs, and marketing copy that can be used for the McCormick page.
-
-2. A McCormick YouTube video showcasing the X4 series — could be embedded on the McCormick page or used for screenshot imagery.
-
----
-
 ## Google Drive Shared Folder
 
 Kristi shared a Google Drive folder called "2025" on February 28 with project assets. Her note: "Let me know if this link works if not I can send you the login for my gmail so you can access it." This folder likely contains additional images and assets beyond what was sent directly via email.
