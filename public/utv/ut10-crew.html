@@ -40,7 +40,7 @@
       <div class="container">
         <div class="utv-product-inner">
           <div class="utv-product-image">
-            <img src="../img/2X9A3768.jpg" alt="Segway UT10 Crew" id="productImage">
+            <img src="../img/ut10-crew-s.webp" alt="Segway UT10 Crew" id="productImage">
           </div>
           <div class="utv-product-info">
             <p class="product-year">2025</p>
@@ -188,6 +188,7 @@
     function pageInit() {
       var trimNames = ['Segway UT10 S Crew', 'Segway UT10 P Crew'];
       var trimPrices = ['$16,999.00', '$18,999.00'];
+      var trimImages = ['../img/ut10-crew-s.webp', '../img/ut10-crew-p.webp'];
 
       function setTrim(index) {
         document.querySelectorAll('.trim-btn').forEach(function (btn, i) {
@@ -195,8 +196,10 @@
         });
         var modelEl = document.getElementById('productModel');
         var priceEl = document.getElementById('productPrice');
+        var imgEl = document.getElementById('productImage');
         if (modelEl) modelEl.textContent = trimNames[index];
         if (priceEl) priceEl.textContent = trimPrices[index];
+        if (imgEl) imgEl.src = trimImages[index];
 
         var table = document.getElementById('specsTable');
         if (!table) return;
