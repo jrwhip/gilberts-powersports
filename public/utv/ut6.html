@@ -131,29 +131,23 @@
   <script src="../js/router.js"></script>
 
   <script>
-    (function () {
+    function pageInit() {
       var trimNames = ['Segway UT6 S', 'Segway UT6 M', 'Segway UT6 P'];
       var trimPrices = ['$10,499.00', '$11,499.00', '$12,499.00'];
-      var activeTrim = 0;
 
       function setTrim(index) {
-        activeTrim = index;
-
-        // Update buttons
         document.querySelectorAll('.trim-btn').forEach(function (btn, i) {
           btn.classList.toggle('active', i === index);
         });
 
-        // Update product info
         var modelEl = document.getElementById('productModel');
         var priceEl = document.getElementById('productPrice');
         if (modelEl) modelEl.textContent = trimNames[index];
         if (priceEl) priceEl.textContent = trimPrices[index];
 
-        // Update specs table highlights
         var table = document.getElementById('specsTable');
         if (!table) return;
-        var colIndex = index + 1; // +1 for the label column
+        var colIndex = index + 1;
         table.querySelectorAll('th, td').forEach(function (cell) {
           cell.classList.remove('active-trim');
         });
@@ -170,7 +164,8 @@
         if (!btn) return;
         setTrim(parseInt(btn.dataset.trim));
       });
-    })();
+    }
+    pageInit();
   </script>
 
 </body>

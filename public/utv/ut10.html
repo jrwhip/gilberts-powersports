@@ -189,13 +189,11 @@
   <script src="../js/router.js"></script>
 
   <script>
-    (function () {
+    function pageInit() {
       var trimNames = ['Segway UT10 S', 'Segway UT10 P'];
       var trimPrices = ['$14,499.00', '$16,499.00'];
-      var activeTrim = 0;
 
       function setTrim(index) {
-        activeTrim = index;
         document.querySelectorAll('.trim-btn').forEach(function (btn, i) {
           btn.classList.toggle('active', i === index);
         });
@@ -223,7 +221,8 @@
         if (!btn) return;
         setTrim(parseInt(btn.dataset.trim));
       });
-    })();
+    }
+    pageInit();
   </script>
 
 </body>

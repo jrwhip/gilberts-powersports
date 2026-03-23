@@ -180,13 +180,11 @@
   <script src="../js/router.js"></script>
 
   <script>
-    (function () {
+    function pageInit() {
       var trimNames = ['Segway Villain SX10 S (64")', 'Segway Villain SX10 P (64")', 'Segway Villain SX10 WP (72")'];
       var trimPrices = ['$16,499.00', '$19,499.00', '$19,999.00'];
-      var activeTrim = 0;
 
       function setTrim(index) {
-        activeTrim = index;
         document.querySelectorAll('.trim-btn').forEach(function (btn, i) {
           btn.classList.toggle('active', i === index);
         });
@@ -214,7 +212,8 @@
         if (!btn) return;
         setTrim(parseInt(btn.dataset.trim));
       });
-    })();
+    }
+    pageInit();
   </script>
 
 </body>
