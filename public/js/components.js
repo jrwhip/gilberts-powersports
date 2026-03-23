@@ -36,6 +36,7 @@
             <span></span><span></span><span></span>
           </button>
           <ul class="nav-links" id="navLinks">
+            <li><a href="${base}inventory.html"${activeClass('/inventory')}>Inventory</a></li>
             <li><a href="${base}services.html"${activeClass('/services')}>Services</a></li>
             <li class="nav-dropdown">
               <button class="nav-dropdown-toggle${utvActive}" aria-expanded="false" aria-haspopup="true">UTVs
@@ -86,7 +87,9 @@
               <div class="footer-column">
                 <h4>Company</h4>
                 <ul>
+                  <li><a href="${base}inventory.html">Inventory</a></li>
                   <li><a href="${base}services.html">Services</a></li>
+                  <li><a href="${base}financing.html">Financing</a></li>
                   <li><a href="${base}contact.html">Contact</a></li>
                 </ul>
               </div>
