@@ -48,6 +48,7 @@
                 <li><a href="${base}utv/villain-sx10.html">Segway Villain SX10</a></li>
               </ul>
             </li>
+            <li><a href="${base}financing.html"${activeClass('/financing')}>Financing</a></li>
             <li><a href="${base}contact.html"${navCtaClass('/contact')}>Contact Us</a></li>
           </ul>
         </div>
