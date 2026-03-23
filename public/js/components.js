@@ -47,6 +47,7 @@
                 <li><a href="${base}utv/ut10.html">Segway UT10</a></li>
                 <li><a href="${base}utv/ut10-crew.html">Segway UT10 Crew</a></li>
                 <li><a href="${base}utv/villain-sx10.html">Segway Villain SX10</a></li>
+                <li><a href="${base}utv/super-villain.html">Segway Super Villain</a></li>
               </ul>
             </li>
             <li><a href="${base}financing.html"${activeClass('/financing')}>Financing</a></li>
