@@ -70,7 +70,7 @@
           <div class="footer-top">
             <div class="footer-brand">
               <img src="${base}img/gilbert-logo-white.svg" alt="Gilbert's Powersports" class="footer-logo">
-              <p>Utah's premier Segway powersports dealer and multi-generational family repair shop. Side-by-sides, UTVs, parts, and service.</p>
+              <p>Preston, Idaho's premier Segway powersports dealer and multi-generational family repair shop. Side-by-sides, UTVs, parts, and service.</p>
             </div>
             <div class="footer-links">
               <div class="footer-column">
