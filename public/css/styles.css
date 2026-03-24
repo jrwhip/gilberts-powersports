@@ -437,7 +437,7 @@ main.page-exit {
 .hero-slide .slide-zoom {
   width: 100%;
   height: 100%;
-  animation: kenBurns 12s ease-in-out infinite alternate;
+  animation: kenBurns 12s ease-in-out forwards;
 }
 
 @keyframes kenBurns {
